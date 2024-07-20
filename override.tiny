@@ -1,0 +1,6 @@
+tiny	2	0	intermediary	named
+#c    net/minecraft/class_287    net/minecraft/client/render/BufferBuilder
+#    f    I    field_1554    vertexCountRenamed
+
+c	com/simibubi/create/foundation/gui/widget/AbstractSimiWidget	com/simibubi/create/foundation/gui/widget/AbstractSimiWidget
+	m	(Lnet/minecraft/class_332;IIF)V	renderButton	renderButton2	renderButton
