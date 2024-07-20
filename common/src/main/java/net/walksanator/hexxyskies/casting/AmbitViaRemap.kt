@@ -7,7 +7,6 @@ import net.minecraft.world.phys.Vec3
 import net.walksanator.hexxyskies.mixin.CastingEnvironmentAccessor
 import org.valkyrienskies.mod.common.getShipManagingPos
 import org.valkyrienskies.mod.common.toWorldCoordinates
-import org.valkyrienskies.mod.common.world.clipIncludeShips
 import kotlin.random.Random
 
 class AmbitViaRemap(val parent: CastingEnvironment) : IsVecInRange {
@@ -19,6 +18,7 @@ class AmbitViaRemap(val parent: CastingEnvironment) : IsVecInRange {
     override fun onIsVecInRange(vec: Vec3, current: Boolean): Boolean {
         if (current) {return true}
         val ship = parent.world.getShipManagingPos(vec)
+        //parent.world.allShips.getById();
         return (parent as CastingEnvironmentAccessor).invokeIsVecInRangeEnvironment(ship?.toWorldCoordinates(vec))
     }
 
