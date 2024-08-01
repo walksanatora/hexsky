@@ -19,10 +19,13 @@ object PatternRegistry {
         HexPattern.fromAngles("wawwwawaa", HexDir.EAST),
         OpShipPos
     )}
-
     val SHIP_ROT = REGISTRY.register("ship_rot") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwaawa", HexDir.EAST),
         OpShipRot
+    )}
+    val SHIP_WEIGHT = REGISTRY.register("ship_weight") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwawde",HexDir.EAST),
+        OpShipMass
     )}
 
     val APPLY_FORCE_VARIANT = REGISTRY.register("force_variant") { ActionRegistryEntry(
@@ -32,6 +35,24 @@ object PatternRegistry {
     val APPLY_TORQUE_VARIANT = REGISTRY.register("torque_variant") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwawawwqqqwwawa", HexDir.EAST),
         OpTorqueApply(false)
+    )}
+
+    val APPLY_FORCE_INVARIANT = REGISTRY.register("force_invariant") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwawawwqqqwwaqw", HexDir.EAST),
+        OpForceApply(true)
+    )}
+    val APPLY_TORQUE_INVARIANT = REGISTRY.register("torque_invariant") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwawawwqqqwwaqqd", HexDir.EAST),
+        OpForceApply(true)
+    )}
+
+    val APPLY_FORCE_VARIANT_POS = REGISTRY.register("force_variant_pos") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwawawwqqqwwaqww", HexDir.EAST),
+        OpApplyForceToPos(true)
+    )}
+    val APPLY_TORQUE_VARIANT_POS = REGISTRY.register("torque_variant_pos") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwawawwqqqwwaqqdq", HexDir.EAST),
+        OpApplyForceToPos(false)
     )}
 
     fun register() {

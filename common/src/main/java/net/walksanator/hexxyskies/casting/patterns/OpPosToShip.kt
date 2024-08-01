@@ -7,6 +7,7 @@ import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.NullIota
 import at.petrak.hexcasting.api.misc.MediaConstants
 import net.walksanator.hexxyskies.casting.iotas.ShipIota
+import net.walksanator.hexxyskies.ship.getShipDataHolder
 import org.valkyrienskies.mod.common.getShipManagingPos
 
 object OpPosToShip : ConstMediaAction {
@@ -15,7 +16,9 @@ object OpPosToShip : ConstMediaAction {
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
         val pos = args.getBlockPos(0, argc)
         env.assertPosInRange(pos)
-        val ship = env.world.getShipManagingPos(pos)?.let { ShipIota(it.id, it.slug) }?: NullIota()
+        val ship = env.world.getShipManagingPos(pos)?.let {
+            if (it.getShipDataHolder().cloaked) {null} else {ShipIota(it.id, it.slug)}
+        }?: NullIota()
         return listOf(ship)
     }
 }
