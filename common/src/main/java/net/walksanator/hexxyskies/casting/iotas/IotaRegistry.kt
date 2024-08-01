@@ -6,10 +6,13 @@ import net.walksanator.hexxyskies.HexSkyCommon
 
 object IotaRegistry {
     private val REGISTRY = DeferredRegister.create(HexSkyCommon.MOD_ID, HexRegistries.IOTA_TYPE)
+    private var registered = false;
 
     val SHIP = REGISTRY.register("ship") {ShipIota.Type}
 
     fun register() {
+        if (registered) return
         REGISTRY.register()
+        registered = true
     }
 }

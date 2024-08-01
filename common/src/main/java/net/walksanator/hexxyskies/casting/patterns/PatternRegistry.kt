@@ -14,6 +14,10 @@ object PatternRegistry {
         HexPattern.fromAngles("wawwwa",HexDir.EAST),
         OpPosToShip
     )}
+    val CLOAK = REGISTRY.register("cloak") { ActionRegistryEntry(
+        HexPattern.fromAngles("dwwwdw", HexDir.NORTH_EAST),
+        OpCloak
+    )}
 
     val SHIP_POS = REGISTRY.register("ship_pos") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwawaa", HexDir.EAST),

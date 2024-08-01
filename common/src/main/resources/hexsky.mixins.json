@@ -9,6 +9,8 @@
     "CastingEnvironmentAccessor",
     "MixinBlockRaycasts",
     "MixinEntityRaycast",
+    "MixinInjectIotaRegistration",
+    "MixinInjectPatternRegistration",
     "MixinOpGetEntitiesBy"
   ],
   "injectors": {

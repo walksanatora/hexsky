@@ -25,7 +25,7 @@ public final class HexSkyCommon {
         killMe(); //lets go gambling!
     }
     public static void killMe() {
-        IotaRegistry.INSTANCE.register();
-        PatternRegistry.INSTANCE.register();
+        //IotaRegistry.INSTANCE.register(); //moved to a mixin
+        //PatternRegistry.INSTANCE.register(); //moved to a mixin
     }
 }

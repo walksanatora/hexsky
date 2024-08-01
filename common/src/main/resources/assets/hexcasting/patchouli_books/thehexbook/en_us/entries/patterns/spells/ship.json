@@ -1,0 +1,102 @@
+{
+  "name": "hexsky.entry.ship_spells",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:oak_boat",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexsky.entry.ship_spells.entry"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:p2s",
+      "anchor": "hexsky:p2s",
+      "input": "vec",
+      "output": "ship",
+      "text": "hexsky.page.ship_spells.p2s"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:cloak",
+      "anchor": "hexsky:cloak",
+      "input": "ship",
+      "output": "bool",
+      "text": "hexsky.page.ship_spells.cloak"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_pos",
+      "anchor": "hexsky:ship_pos",
+      "input": "ship",
+      "output": "vec",
+      "text": "hexsky.page.ship_spells.ship_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_rot",
+      "anchor": "hexsky:ship_rot",
+      "input": "ship",
+      "output": "vec",
+      "text": "hexsky.page.ship_spells.ship_rot"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_weight",
+      "anchor": "hexsky:ship_weight",
+      "input:": "ship",
+      "output": "num",
+      "text": "hexsky.page.ship_spells.ship_weight"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant",
+      "anchor": "hexsky:force_variant",
+      "input:": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_variant",
+      "anchor": "hexsky:torque_variant",
+      "input:": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.torque_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_invariant",
+      "anchor": "hexsky:force_invariant",
+      "input:": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_invariant",
+      "anchor": "hexsky:torque_invariant",
+      "input:": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.torque_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant_pos",
+      "anchor": "hexsky:force_variant_pos",
+      "input:": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_variant_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_variant_pos",
+      "anchor": "hexsky:torque_variant_pos",
+      "input:": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.torque_variant_pos"
+    }
+  ]
+}

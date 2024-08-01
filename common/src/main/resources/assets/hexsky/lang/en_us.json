@@ -1,5 +1,24 @@
 {
   "hexsky.iota.ship": "Ship: \"%s\"",
   "hexsky.mishap.invalid": "Ship is Invalid spell because: %s",
-  "hexsky.mishap.invalid.reason.null": "The ship does not exists!"
+  "hexsky.mishap.invalid.reason.null": "The ship does not exists!",
+
+  "hexsky.entry.ship_spells": "Ship Manipulation",
+  "hexsky.entry.ship_spells.entry": "Welcome to Navimancy. The art of manipulating ships.$(br)Some important keywords before we start.$(li)$(thing)Force$() is a $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is like force. but instead of being in a direction it is spin.$(li)$(thing)Variant$() a Variant force is one that is applied based on the rotation of the ship.$(li)$(thing)Invariant$() a Invariant force is applied from the view of the world$()",
+
+  "hexcasting.action.hexsky:p2s": "Deckhand's Purification",
+  "hexsky.page.ship_spells.p2s": "takes a posisition and gets the ship it is apart of. if it is not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
+
+  "hexcasting.action.hexsky:cloak": "Cloaking Purification",
+  "hexsky.page.ship_spells.cloak": "toggles the ship's cloak and returns the ship's cloak state",
+
+
+  "hexcasting.action.hexsky:ship_pos": "Ship Compass Prfn.",
+  "hexsky.page.ship_spells.ship_pos": "functions like $(l:patterns/basics#hexcasting:entity_pos/eye)Compass Purification$() but instead returns the center of mass of the ship",
+
+  "hexcasting.action.hexsky:ship_rot": "Heading Purification",
+  "hexsky.page.ship_spells.ship_rot": "functions like $(l:patterns/basics#hexcasting:get_entity_look)Alidade's Purification$() but gets the ships $(l:patterns/spells/ship)forward$() direction",
+
+  "hexcasting.action.hexsky:ship_weight": "Tonnage Purification",
+  "hexsky.page.ship_spells.ship_weight": "returns the total weight of the ship.$(br)Usually forces on the ship are multiplied by the mass of a ship"
 }
