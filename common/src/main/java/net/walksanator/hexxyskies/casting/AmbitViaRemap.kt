@@ -9,12 +9,11 @@ import org.valkyrienskies.mod.common.getShipManagingPos
 import org.valkyrienskies.mod.common.toWorldCoordinates
 import kotlin.random.Random
 
-class AmbitViaRemap(val parent: CastingEnvironment) : IsVecInRange {
-    val id = Keygen.randid()
-    val key = Key(id)
+class Key(val id: Int) : CastingEnvironmentComponent.Key<AmbitViaRemap>
+class AmbitViaRemap(private val parent: CastingEnvironment) : IsVecInRange {
+    private val id = Keygen.randid()
+    private val key = Key(id)
     override fun getKey(): CastingEnvironmentComponent.Key<*> = key
-    class Key(val id: Int) : CastingEnvironmentComponent.Key<AmbitViaRemap>
-
     override fun onIsVecInRange(vec: Vec3, current: Boolean): Boolean {
         if (current) {return true}
         val ship = parent.world.getShipManagingPos(vec)

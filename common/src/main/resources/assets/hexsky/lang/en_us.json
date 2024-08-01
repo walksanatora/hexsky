@@ -1,0 +1,5 @@
+{
+  "hexsky.iota.ship": "Ship: \"%s\"",
+  "hexsky.mishap.invalid": "Ship is Invalid spell because: %s",
+  "hexsky.mishap.invalid.reason.null": "The ship does not exists!"
+}
