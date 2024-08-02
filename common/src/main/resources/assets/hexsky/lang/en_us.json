@@ -4,7 +4,7 @@
   "hexsky.mishap.invalid.reason.null": "The ship does not exists!",
 
   "hexsky.entry.ship_spells": "Ship Manipulation",
-  "hexsky.entry.ship_spells.entry": "Welcome to Navimancy. The art of manipulating ships.$(br)Some important keywords before we start.$(li)$(thing)Force$() is a $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is like force. but instead of being in a direction it is spin.$(li)$(thing)Variant$() a Variant force is one that is applied based on the rotation of the ship.$(li)$(thing)Invariant$() a Invariant force is applied from the view of the world$()",
+  "hexsky.entry.ship_spells.entry": "Welcome to Navimancy. The art of manipulating ships.$(br)Some important keywords before we start.$(li)$(thing)Force$() is a $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is like force. but instead of being in a direction it is spin.$(li)$(thing)Variant$() a Variant force is one that is based on the ships axis.$(li)$(thing)Invariant$() a Invariant force is applied based on the worlds axis$()",
 
   "hexcasting.action.hexsky:p2s": "Deckhand's Purification",
   "hexsky.page.ship_spells.p2s": "takes a posisition and gets the ship it is apart of. if it is not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
@@ -26,6 +26,20 @@
   "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
 
   "hexcasting.action.hexsky:assemble": "Assemble",
-  "hexsky.page.ship_spells.assemble": "takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored"
+  "hexsky.page.ship_spells.assemble": "takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored",
 
+  "hecasting.action.hexsky:force_variant": "Helmsman's Yeet",
+  "hexsky.page.ship_spells.force_variant": "Applies a $(thing)Variant Force$() to the ship in the specified direction",
+  "hecasting.action.hexsky:torque_variant": "Helmsman's Twist",
+  "hexsky.page.ship_spells.torque_variant": "Applies a $(thing)Variant Torque$() to the ship in the specified direction",
+
+  "hecasting.action.hexsky:force_invariant": "Nature's Yeet",
+  "hexsky.page.ship_spells.force_invariant": "Applies a $(thing)Invariant Force$() to the ship in the specified direction",
+  "hecasting.action.hexsky:torque_invariant": "Nature's Twist",
+  "hexsky.page.ship_spells.torque_invariant": "Applies a $(thing)Invariant Torque$() to the ship in the specified direction",
+
+  "hecasting.action.hexsky:force_invariant_pos": "Nature's Yeet II",
+  "hexsky.page.ship_spells.force_invariant_pos": "Applies a $(thing)Invariant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()",
+  "hecasting.action.hexsky:force_variant_pos": "Helmsman's Yeet II",
+  "hexsky.page.ship_spells.force_variant_pos": "Applies a $(thing)Variant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()"
 }
