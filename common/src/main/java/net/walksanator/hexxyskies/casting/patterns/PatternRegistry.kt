@@ -72,16 +72,21 @@ object PatternRegistry {
 
     val EMBARK = if (Platform.isModLoaded("hexal")) {
         REGISTRY.register("embark") { ActionRegistryEntry(
-            HexPattern.fromAngles("d", HexDir.EAST),
+            HexPattern.fromAngles("wawwwdewdwewd", HexDir.EAST),
             OpEmbark
         )}
     } else {null}
     val DISEMBARK = if (Platform.isModLoaded("hexal")) {
         REGISTRY.register("disembark") { ActionRegistryEntry(
-            HexPattern.fromAngles("a", HexDir.EAST),
+            HexPattern.fromAngles("wawwwqawqwawq", HexDir.EAST),
             OpDisembark
         )}
     } else {null}
+
+    val SHIP_TO_WORLD_POS = REGISTRY.register("shiptoworldpos") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwaawawwawwqqwq", HexDir.EAST),
+        OpVec2World
+    )}
 
     fun register() {
         REGISTRY.register()

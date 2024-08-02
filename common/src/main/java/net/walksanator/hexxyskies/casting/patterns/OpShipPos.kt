@@ -11,7 +11,7 @@ object OpShipPos : ConstMediaAction {
     override val argc: Int = 1
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
-        val ship = args.getShip(0,env.world,argc).transform.positionInWorld.toMinecraft()
+        val ship = args.getShip(0,env.world,argc).transform.positionInShip.toMinecraft()
         return listOf(Vec3Iota(ship))
     }
 }

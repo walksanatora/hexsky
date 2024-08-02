@@ -1,0 +1,31 @@
+{
+  "name": "hexsky.entry.ship_wisp",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:cherry_boat",
+  "flag": "mod:hexal",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexsky.entry.ship_wisp.entry"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:embark",
+      "anchor": "hexsky:embark",
+      "input": "ship | vec",
+      "output": "",
+      "text": "hexsky.page.ship_wisp.embark"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:disembark",
+      "anchor": "hexsky:disembark",
+      "input": "",
+      "output": "",
+      "text": "hexsky.page.ship_wisp.disembark"
+    }
+  ]
+}

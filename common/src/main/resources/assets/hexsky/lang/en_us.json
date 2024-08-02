@@ -14,7 +14,7 @@
 
 
   "hexcasting.action.hexsky:ship_pos": "Ship Compass Prfn.",
-  "hexsky.page.ship_spells.ship_pos": "functions like $(l:patterns/basics#hexcasting:entity_pos/eye)Compass Purification$() but instead returns the center of mass of the ship",
+  "hexsky.page.ship_spells.ship_pos": "functions like $(l:patterns/basics#hexcasting:entity_pos/eye)Compass Purification$() but instead returns the center of mass on the ship",
 
   "hexcasting.action.hexsky:ship_rot": "Heading Purification",
   "hexsky.page.ship_spells.ship_rot": "functions like $(l:patterns/basics#hexcasting:get_entity_look)Alidade's Purification$() but gets the ships $(l:patterns/spells/ship)forward$() direction",
@@ -41,5 +41,15 @@
   "hexcasting.action.hexsky:force_invariant_pos": "Nature's Yeet II",
   "hexsky.page.ship_spells.force_invariant_pos": "Applies a $(thing)Invariant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()",
   "hexcasting.action.hexsky:force_variant_pos": "Helmsman's Yeet II",
-  "hexsky.page.ship_spells.force_variant_pos": "Applies a $(thing)Variant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()"
+  "hexsky.page.ship_spells.force_variant_pos": "Applies a $(thing)Variant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()",
+
+  "hexsky.entry.ship_wisp": "Wisp related ship spells",
+  "hexsky.entry.ship_wisp.entry": "it appears my favorite ball of media is able to anchor it's self onto any ships that is is within.$(br)these patterns dont appear to do anything when cast by anything other than a wisp",
+  "hecasting.action.hexsky:embark": "Embark",
+  "hexsky.page.ship_wisp.embark": "puts the wisp that casted this into the ship (if it is nearby)",
+  "hexcasting.action.hexsky:disembark": "Disembark",
+  "hexsky.page.ship_wisp.disembark": "has the wisp detach from the ship and go back into the world",
+
+  "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
+  "hexsky.page.ship_spells.shiptoworldpos": "Turns a posisition on a ship into a posisition in the world. does nothing if the point is allready in the world"
 }

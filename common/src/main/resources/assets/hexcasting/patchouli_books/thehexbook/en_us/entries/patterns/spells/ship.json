@@ -66,6 +66,14 @@
       "output": "ship",
       "text": "hexsky.page.ship_spells.assemble"
     },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:shiptoworldpos",
+      "anchor": "hexsky:shiptoworldpos",
+      "input": "vec",
+      "output": "vec",
+      "text": "hexsky.page.ship_spells.shiptoworldpos"
+    },
 
     {
       "type": "hexcasting:pattern",
