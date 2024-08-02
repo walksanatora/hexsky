@@ -4,6 +4,7 @@ import at.petrak.hexcasting.api.casting.ActionRegistryEntry
 import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
+import dev.architectury.platform.Platform
 import dev.architectury.registry.registries.DeferredRegister
 import net.walksanator.hexxyskies.HexSkyCommon
 
@@ -64,10 +65,23 @@ object PatternRegistry {
         OpZoneShips
     )}
 
-    val ASSEMBLE_SHIP = REGISTRY.register("assembly") { ActionRegistryEntry(
+    val ASSEMBLE_SHIP = REGISTRY.register("assemble") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwdeeeeeqa", HexDir.EAST),
         OpAssemble
     )}
+
+    val EMBARK = if (Platform.isModLoaded("hexal")) {
+        REGISTRY.register("embark") { ActionRegistryEntry(
+            HexPattern.fromAngles("d", HexDir.EAST),
+            OpEmbark
+        )}
+    } else {null}
+    val DISEMBARK = if (Platform.isModLoaded("hexal")) {
+        REGISTRY.register("disembark") { ActionRegistryEntry(
+            HexPattern.fromAngles("a", HexDir.EAST),
+            OpDisembark
+        )}
+    } else {null}
 
     fun register() {
         REGISTRY.register()

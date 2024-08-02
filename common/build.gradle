@@ -18,6 +18,7 @@ dependencies {
     compileOnly("org.valkyrienskies.core:util:${rootProject.vs_core_version}")
     compileOnly("org.valkyrienskies.core:impl:${rootProject.vs_core_version}")
 
-    modImplementation "vazkii.patchouli:Patchouli:${rootProject.patchouli_version}-FABRIC"
+    modCompileOnly "vazkii.patchouli:Patchouli:${rootProject.patchouli_version}-FABRIC"
     modCompileOnly "at.petra-k.hexcasting:hexcasting-common-1.20.1:${rootProject.hexcasting_version}"
+    modCompileOnly files("${rootProject.rootDir}/libs/hexal-fabric-1.20.1-0.3.0-2.jar")
 }
