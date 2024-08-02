@@ -52,6 +52,23 @@
     },
     {
       "type": "hexcasting:pattern",
+      "op_id": "hexsky:zone_ships",
+      "anchor": "hexsky:zone_ships",
+      "input": "vec, double",
+      "output": "[ship]",
+      "text": "hexsky.page.ship_spells.zone_ships"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:assemble",
+      "anchor": "hexsky:assemble",
+      "input": "[vec]",
+      "output": "ship",
+      "text": "hexsky.page.ship_spells.assemble"
+    },
+
+    {
+      "type": "hexcasting:pattern",
       "op_id": "hexsky:force_variant",
       "anchor": "hexsky:force_variant",
       "input:": "ship, vec",
@@ -97,14 +114,6 @@
       "input:": "ship, vec, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_variant_pos"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:zone_ships",
-      "anchor": "hexsky:zone_ships",
-      "input": "vec, double",
-      "output": "[ship]",
-      "text": "hexsky.page.ship_spells.zone_ships"
     }
   ]
 }

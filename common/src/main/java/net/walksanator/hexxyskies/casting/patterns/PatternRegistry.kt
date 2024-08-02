@@ -64,6 +64,11 @@ object PatternRegistry {
         OpZoneShips
     )}
 
+    val ASSEMBLE_SHIP = REGISTRY.register("assembly") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwdeeeeeqa", HexDir.EAST),
+        OpAssemble
+    )}
+
     fun register() {
         REGISTRY.register()
     }

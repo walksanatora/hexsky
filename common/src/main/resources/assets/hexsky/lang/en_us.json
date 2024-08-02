@@ -23,5 +23,9 @@
   "hexsky.page.ship_spells.ship_weight": "returns the total weight of the ship.$(br)Usually forces on the ship are multiplied by the mass of a ship",
 
   "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ship",
-  "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()"
+  "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
+
+  "hexcasting.action.hexsky:assemble": "Assemble",
+  "hexsky.page.ship_spells.assemble": "takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored"
+
 }
