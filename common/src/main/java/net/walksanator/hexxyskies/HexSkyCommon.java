@@ -6,12 +6,8 @@ package net.walksanator.hexxyskies;
 
 
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
-import net.minecraft.core.BlockPos;
 import net.walksanator.hexxyskies.casting.AmbitViaRemap;
-import net.walksanator.hexxyskies.casting.iotas.IotaRegistry;
-import net.walksanator.hexxyskies.casting.patterns.PatternRegistry;
-import org.valkyrienskies.core.api.ships.ServerShip;
-import org.valkyrienskies.mod.common.VSGameUtilsKt;
+
 
 public final class HexSkyCommon {
     public static final String MOD_ID = "hexsky";
@@ -23,6 +19,7 @@ public final class HexSkyCommon {
             env.addExtension(new AmbitViaRemap(env));
         });
         killMe(); //lets go gambling!
+        //can_start_enlighten per_world_pattern requires_enlightenment
     }
     public static void killMe() {
         //IotaRegistry.INSTANCE.register(); //moved to a mixin

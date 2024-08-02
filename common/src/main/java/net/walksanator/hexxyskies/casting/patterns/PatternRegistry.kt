@@ -88,6 +88,11 @@ object PatternRegistry {
         OpVec2World
     )}
 
+    val SWAP_BLOCKS  = REGISTRY.register("swap") { ActionRegistryEntry(
+        HexPattern.fromAngles("qaqqqqqewqaqqqqqewqaqqqqqewqaqqqqqewqaqqqqqewqaqqqqqe", HexDir.SOUTH_EAST),
+        OpSwapBlock
+    )}
+
     fun register() {
         REGISTRY.register()
     }
