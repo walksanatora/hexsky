@@ -2,6 +2,7 @@ package net.walksanator.hexxyskies.casting.patterns
 
 import at.petrak.hexcasting.api.casting.castables.ConstMediaAction
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment
+import at.petrak.hexcasting.api.casting.getDoubleBetween
 import at.petrak.hexcasting.api.casting.getPositiveDouble
 import at.petrak.hexcasting.api.casting.getVec3
 import at.petrak.hexcasting.api.casting.iota.Iota
@@ -17,7 +18,7 @@ object OpZoneShips: ConstMediaAction {
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
         val center = args.getVec3(0, argc)
-        val radius = args.getPositiveDouble(1, argc)
+        val radius = args.getDoubleBetween(1, 0.01, 32.0, argc)
         val ships = env.world.getShipsIntersecting(AABB(center, center).inflate(radius)).filter { ship ->
             ship is ServerShip && !ship.getShipDataHolder().cloaked
         }.map { ship -> ShipIota(ship.id, ship.slug) }
