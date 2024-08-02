@@ -24,6 +24,5 @@ class AmbitViaRemap(private val parent: CastingEnvironment) : IsVecInRange {
     private object Keygen {
         val rand = Random(2819038190)
         fun randid() = rand.nextInt()
-
     }
 }
