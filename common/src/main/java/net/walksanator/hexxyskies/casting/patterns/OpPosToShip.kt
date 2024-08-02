@@ -6,13 +6,9 @@ import at.petrak.hexcasting.api.casting.getBlockPos
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.NullIota
 import at.petrak.hexcasting.api.misc.MediaConstants
-import net.minecraft.server.level.ServerLevel
 import net.walksanator.hexxyskies.casting.iotas.ShipIota
 import net.walksanator.hexxyskies.ship.getShipDataHolder
-import org.valkyrienskies.core.api.ships.ServerShip
-import org.valkyrienskies.mod.common.getShipManagingPos
 import org.valkyrienskies.mod.common.getShipObjectManagingPos
-import org.valkyrienskies.mod.common.shipObjectWorld
 
 object OpPosToShip : ConstMediaAction {
     override val argc: Int = 1

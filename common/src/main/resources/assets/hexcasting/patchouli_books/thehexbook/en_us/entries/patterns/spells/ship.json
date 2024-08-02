@@ -113,7 +113,7 @@
       "anchor": "hexsky:force_invariant_pos",
       "input:": "ship, vec, vec",
       "output": "",
-      "text": "hexsky.page.ship_spells.force_variant_pos"
+      "text": "hexsky.page.ship_spells.force_invariant_pos"
     }
   ]
 }
