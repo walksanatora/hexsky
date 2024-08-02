@@ -20,5 +20,8 @@
   "hexsky.page.ship_spells.ship_rot": "functions like $(l:patterns/basics#hexcasting:get_entity_look)Alidade's Purification$() but gets the ships $(l:patterns/spells/ship)forward$() direction",
 
   "hexcasting.action.hexsky:ship_weight": "Tonnage Purification",
-  "hexsky.page.ship_spells.ship_weight": "returns the total weight of the ship.$(br)Usually forces on the ship are multiplied by the mass of a ship"
+  "hexsky.page.ship_spells.ship_weight": "returns the total weight of the ship.$(br)Usually forces on the ship are multiplied by the mass of a ship",
+
+  "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ships",
+  "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position"
 }
