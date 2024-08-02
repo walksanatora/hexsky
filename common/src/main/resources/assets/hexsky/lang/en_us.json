@@ -45,7 +45,7 @@
 
   "hexsky.entry.ship_wisp": "Wisp related ship spells",
   "hexsky.entry.ship_wisp.entry": "it appears my favorite ball of media is able to anchor it's self onto any ships that is is within.$(br)these patterns dont appear to do anything when cast by anything other than a wisp",
-  "hecasting.action.hexsky:embark": "Embark",
+  "hexcasting.action.hexsky:embark": "Embark",
   "hexsky.page.ship_wisp.embark": "puts the wisp that casted this into the ship (if it is nearby)",
   "hexcasting.action.hexsky:disembark": "Disembark",
   "hexsky.page.ship_wisp.disembark": "has the wisp detach from the ship and go back into the world",
