@@ -47,14 +47,14 @@ object PatternRegistry {
     )}
     val APPLY_TORQUE_INVARIANT = REGISTRY.register("torque_invariant") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwawawwqqqwwaqqd", HexDir.EAST),
-        OpForceApply(true)
+        OpTorqueApply(true)
     )}
 
-    val APPLY_FORCE_VARIANT_POS = REGISTRY.register("force_variant_pos") { ActionRegistryEntry(
+    val APPLY_FORCE_INVARIANT_POS = REGISTRY.register("force_invariant_pos") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwawawwqqqwwaqww", HexDir.EAST),
         OpApplyForceToPos(true)
     )}
-    val APPLY_TORQUE_VARIANT_POS = REGISTRY.register("torque_variant_pos") { ActionRegistryEntry(
+    val APPLY_FORCE_VARIANT_POS = REGISTRY.register("force_variant_pos") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwawawwqqqwwaqqdq", HexDir.EAST),
         OpApplyForceToPos(false)
     )}

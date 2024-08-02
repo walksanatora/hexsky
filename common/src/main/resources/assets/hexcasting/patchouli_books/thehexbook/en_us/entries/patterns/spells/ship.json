@@ -92,11 +92,11 @@
     },
     {
       "type": "hexcasting:pattern",
-      "op_id": "hexsky:torque_variant_pos",
-      "anchor": "hexsky:torque_variant_pos",
+      "op_id": "hexsky:force_invariant_pos",
+      "anchor": "hexsky:force_invariant_pos",
       "input:": "ship, vec, vec",
       "output": "",
-      "text": "hexsky.page.ship_spells.torque_variant_pos"
+      "text": "hexsky.page.ship_spells.force_variant_pos"
     }
   ]
 }

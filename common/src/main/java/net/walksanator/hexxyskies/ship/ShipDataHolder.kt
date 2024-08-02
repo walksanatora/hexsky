@@ -63,7 +63,7 @@ class ShipDataHolder() : ShipForcesInducer {
     fun applyRotDependentForce(force: Vector3dc) = rotForces.add(force)
     fun applyRotDependentTorque(torque: Vector3dc) = rotTorques.add(torque)
     fun applyInvariantForceToPos(force: Vector3dc, pos: Vector3dc) = invPosForces.add(InvForceAtPos(force, pos))
-    fun applyInvariantTorqueToPos(force: Vector3dc, pos: Vector3dc) = rotPosForces.add(RotDependentForce(force, pos))
+    fun applyVariantForceToPos(force: Vector3dc, pos: Vector3dc) = rotPosForces.add(RotDependentForce(force, pos))
 
 
     private data class RotDependentForce(val force: Vector3dc, val pos: Vector3dc)
