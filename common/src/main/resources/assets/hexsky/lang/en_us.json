@@ -28,18 +28,18 @@
   "hexcasting.action.hexsky:assemble": "Assemble",
   "hexsky.page.ship_spells.assemble": "takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored",
 
-  "hecasting.action.hexsky:force_variant": "Helmsman's Yeet",
+  "hexcasting.action.hexsky:force_variant": "Helmsman's Yeet",
   "hexsky.page.ship_spells.force_variant": "Applies a $(thing)Variant Force$() to the ship in the specified direction",
-  "hecasting.action.hexsky:torque_variant": "Helmsman's Twist",
+  "hexcasting.action.hexsky:torque_variant": "Helmsman's Twist",
   "hexsky.page.ship_spells.torque_variant": "Applies a $(thing)Variant Torque$() to the ship in the specified direction",
 
-  "hecasting.action.hexsky:force_invariant": "Nature's Yeet",
+  "hexcasting.action.hexsky:force_invariant": "Nature's Yeet",
   "hexsky.page.ship_spells.force_invariant": "Applies a $(thing)Invariant Force$() to the ship in the specified direction",
-  "hecasting.action.hexsky:torque_invariant": "Nature's Twist",
+  "hexcasting.action.hexsky:torque_invariant": "Nature's Twist",
   "hexsky.page.ship_spells.torque_invariant": "Applies a $(thing)Invariant Torque$() to the ship in the specified direction",
 
-  "hecasting.action.hexsky:force_invariant_pos": "Nature's Yeet II",
+  "hexcasting.action.hexsky:force_invariant_pos": "Nature's Yeet II",
   "hexsky.page.ship_spells.force_invariant_pos": "Applies a $(thing)Invariant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()",
-  "hecasting.action.hexsky:force_variant_pos": "Helmsman's Yeet II",
+  "hexcasting.action.hexsky:force_variant_pos": "Helmsman's Yeet II",
   "hexsky.page.ship_spells.force_variant_pos": "Applies a $(thing)Variant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()"
 }
