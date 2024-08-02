@@ -11,7 +11,7 @@ import net.walksanator.hexxyskies.ship.getShipDataHolder
 import org.valkyrienskies.core.api.ships.ServerShip
 import org.valkyrienskies.mod.common.getShipsIntersecting
 
-object OpZoneShipyardPurification: ConstMediaAction {
+object OpZoneShips: ConstMediaAction {
     override val argc: Int
         get() = 2
 

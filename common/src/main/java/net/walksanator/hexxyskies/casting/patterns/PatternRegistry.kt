@@ -59,9 +59,9 @@ object PatternRegistry {
         OpApplyForceToPos(false)
     )}
 
-    val ZONE_SHIPYARD_PURIFICATION = REGISTRY.register("zone_shipyard_purification") { ActionRegistryEntry(
+    val ZONE_SHIPS = REGISTRY.register("zone_ships") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwaqaweeee", HexDir.EAST),
-        OpZoneShipyardPurification
+        OpZoneShips
     )}
 
     fun register() {
