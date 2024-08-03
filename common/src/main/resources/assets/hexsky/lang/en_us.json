@@ -25,6 +25,9 @@
   "hexcasting.action.hexsky:ship_scale": "Magnification Prfn.",
   "hexsky.page.ship_spells.ship_scale": "returns the scale of the ship.$(br)I wonder if there might be a way to induce a change...",
 
+  "hexcasting.action.hexsky:ship_raycast": "Crow's Distillation",
+  "hexsky.page.ship_spells.ship_raycast": "functions like $(l:patterns/entity#hexcasting:raycast)Archer's Distillation$() but instead returns a ship at the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
+
   "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ship",
   "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
 

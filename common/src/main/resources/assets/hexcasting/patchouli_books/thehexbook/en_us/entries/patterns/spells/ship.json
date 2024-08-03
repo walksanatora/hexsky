@@ -60,6 +60,14 @@
     },
     {
       "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_raycast",
+      "anchor": "hexsky:ship_raycast",
+      "input": "vec, vec",
+      "output": "ship | null",
+      "text": "hexsky.page.ship_spells.ship_raycast"
+    },
+    {
+      "type": "hexcasting:pattern",
       "op_id": "hexsky:zone_ships",
       "anchor": "hexsky:zone_ships",
       "input": "vec, double",
