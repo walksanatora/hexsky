@@ -103,6 +103,11 @@ object PatternRegistry {
         OpShipScaling()
     )}
 
+    val SHIP_RAYCAST = REGISTRY.register("ship_raycast") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwaddwaa", HexDir.EAST),
+        OpShipRaycast
+    )}
+
     fun register() {
         REGISTRY.register()
     }
