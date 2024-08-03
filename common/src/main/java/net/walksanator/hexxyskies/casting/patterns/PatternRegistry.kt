@@ -93,6 +93,16 @@ object PatternRegistry {
         OpSwapBlock
     )}
 
+    val SHIP_SCALE = REGISTRY.register("ship_scale") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwa", HexDir.EAST),
+        OpShipScale
+    )}
+
+    val SHIP_SCALING = REGISTRY.register("ship_scaling") { ActionRegistryEntry(
+        HexPattern.fromAngles("awwwaa", HexDir.EAST),
+        OpShipScaling()
+    )}
+
     fun register() {
         REGISTRY.register()
     }
