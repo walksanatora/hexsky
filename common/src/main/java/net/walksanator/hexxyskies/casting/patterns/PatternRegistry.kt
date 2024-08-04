@@ -108,6 +108,19 @@ object PatternRegistry {
         OpShipRaycast
     )}
 
+    val SHIP_ROT_QUAT = if (Platform.isModLoaded("complexhex")) {
+        REGISTRY.register("ship_rot_quat") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwaawe", HexDir.EAST),
+            OpShipRotQuat
+        )}
+    } else {null}
+    val SHIP_ROT_QUAT_SET = if (Platform.isModLoaded("complexhex")) {
+        REGISTRY.register("ship_rot_quat_set") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwqddqe", HexDir.EAST),
+            OpShipSetRotQuat
+        )}
+    } else {null}
+
     fun register() {
         REGISTRY.register()
     }
