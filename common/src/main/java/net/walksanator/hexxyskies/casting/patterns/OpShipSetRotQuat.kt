@@ -29,6 +29,11 @@ object OpShipSetRotQuat : ConstMediaAction {
     }
 }
 
+/*
+This piece of code was ripped wholesale from Kontraption
+https://github.com/illucc/Kontraption/blob/05e55fddc91bdeb63b4598f7dd235684414119c8/src/main/kotlin/net/illuc/kontraption/blockEntities/TileEntityShipControlInterface.kt#L277
+License: https://github.com/illucc/Kontraption/blob/1.20.1/main/LICENSE
+*/
 fun Quaternion.isValidRotation(): Boolean =
     abs(x * x + y * y + z * z + w * w - 1.0) < 0.01
 
