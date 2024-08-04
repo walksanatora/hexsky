@@ -10,6 +10,7 @@ import net.minecraft.world.phys.Vec3
 import net.walksanator.hexxyskies.casting.VariableMediaAction
 import net.walksanator.hexxyskies.casting.iotas.ShipIota
 import net.walksanator.hexxyskies.ship.getShipDataHolder
+import org.joml.Vector3i
 import org.valkyrienskies.core.util.datastructures.DenseBlockPosSet
 import org.valkyrienskies.mod.common.assembly.createNewShipWithBlocks
 import org.valkyrienskies.mod.common.util.toJOML
@@ -28,7 +29,8 @@ object OpAssemble : VariableMediaAction {
         override fun execute(env: CastingEnvironment): List<Iota> {
             val dense = DenseBlockPosSet()
             val center = blocks.fold(Vec3.ZERO) { acc, it ->
-                dense.add(it.blockPos.toJOML().add(0,-1,0))
+                val fix = it.blockPos.toJOML()
+                dense.add(if (fix.y() < 0) {fix.add(0,-1,0)} else {fix})
                 acc.add(it)
             }.div(blocks.size.toDouble()).blockPos
 

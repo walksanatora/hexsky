@@ -23,7 +23,7 @@
   "hexsky.page.ship_spells.ship_weight": "returns the total weight of the ship.$(br)Usually forces on the ship are multiplied by the mass of a ship",
 
   "hexcasting.action.hexsky:ship_scale": "Magnification Prfn.",
-  "hexsky.page.ship_spells.ship_scale": "returns the scale of the ship.$(br)I wonder if there might be a way to induce a change...",
+  "hexsky.page.ship_spells.ship_scale": "returns the scale of the ship.",
 
   "hexcasting.action.hexsky:ship_raycast": "Crow's Distillation",
   "hexsky.page.ship_spells.ship_raycast": "functions like $(l:patterns/entity#hexcasting:raycast)Archer's Distillation$() but instead returns a ship at the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
@@ -50,7 +50,7 @@
   "hexsky.page.ship_spells.force_variant_pos": "Applies a $(thing)Variant Force$() to the ship in the specified direction with a specified offset from the $(l:patterns/spells/ship#hexsky:ship_pos)center of mass$()",
 
   "hexcasting.action.hexsky:ship_scaling": "Nature's Amusement",
-  "hexsky.page.ship_spells.ship_scaling": "Scales the targeted ship to the given scale.$(br)My grand ship is now but a paperweight! Fascinating...",
+  "hexsky.page.ship_spells.ship_scaling": "Scales the targeted ship to the given scale between x1/4 to x4.",
 
   "hexsky.entry.ship_wisp": "Wisp related ship spells",
   "hexsky.entry.ship_wisp.entry": "it appears my favorite ball of media is able to anchor it's self onto any ships that is is within.$(br)these patterns dont appear to do anything when cast by anything other than a wisp",

@@ -60,6 +60,14 @@
     },
     {
       "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scaling",
+      "anchor": "hexsky:ship_scaling",
+      "input:": "ship, double",
+      "output": "",
+      "text": "hexsky.page.ship_spells.ship_scaling"
+    },
+    {
+      "type": "hexcasting:pattern",
       "op_id": "hexsky:ship_raycast",
       "anchor": "hexsky:ship_raycast",
       "input": "vec, vec",
@@ -138,14 +146,6 @@
       "input:": "ship, vec, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_invariant_pos"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:ship_scaling",
-      "anchor": "hexsky:ship_scaling",
-      "input:": "ship, double",
-      "output": "",
-      "text": "hexsky.page.ship_spells.ship_scaling"
     }
   ]
 }
