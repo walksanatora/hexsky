@@ -59,6 +59,17 @@
   "hexcasting.action.hexsky:disembark": "Disembark",
   "hexsky.page.ship_wisp.disembark": "has the wisp detach from the ship and go back into the world",
 
+  "hexsky.entry.ship_moreiotas": "MoreIotas ship spells",
+  "hexsky.entry.ship_moreiotas.entry": "with this influx of new iotas, i have been able to tap deeper into these strange constructs.$(br)i wonder what happens if i delve even further...",
+  "hexcasting.action.hexsky:ship_slug_get": "Boatwright's Prfn.",
+  "hexsky.page.ship_moreiotas.ship_slug_get": "gets the slug of the targeted ship",
+  "hexcasting.action.hexsky:ship_slug_set": "Boatwright's Dstl.",
+  "hexsky.page.ship_moreiotas.ship_slug_set": "sets the slug of the targeted ship if it is not cloaked",
+  "hexcasting.action.hexsky:world_to_ship_matrix": "Windward Purification",
+  "hexsky.page.ship_moreiotas.world_to_ship_matrix": "gets the $(thing)World-to-Ship$() transform matrix of the targeted ship",
+  "hexcasting.action.hexsky:ship_to_world_matrix": "Leeward Purification",
+  "hexsky.page.ship_moreiotas.ship_to_world_matrix": "gets the $(thing)Ship-to-World$() transform matrix of the targeted ship",
+
   "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
   "hexsky.page.ship_spells.shiptoworldpos": "Turns a posisition on a ship into a posisition in the world. does nothing if the point is allready in the world"
 }

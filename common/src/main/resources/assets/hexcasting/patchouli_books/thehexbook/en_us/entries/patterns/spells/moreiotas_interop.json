@@ -1,0 +1,47 @@
+{
+  "name": "hexsky.entry.ship_moreiotas",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:bamboo_boat",
+  "flag": "mod:moreiotas",
+  "sortnum": 10,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexsky.entry.ship_moreiotas.entry"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_slug_get",
+      "anchor": "hexsky:ship_slug_get",
+      "input": "ship",
+      "output": "string | null",
+      "text": "hexsky.page.ship_moreiotas.ship_slug_get"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_slug_set",
+      "anchor": "hexsky:ship_slug_set",
+      "input": "ship, string",
+      "output": "ship | null",
+      "text": "hexsky.page.ship_moreiotas.ship_slug_set"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:world_to_ship_matrix",
+      "anchor": "hexsky:world_to_ship_matrix",
+      "input": "ship",
+      "output": "matrix",
+      "text": "hexsky.page.ship_moreiotas.world_to_ship_matrix"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_to_world_matrix",
+      "anchor": "hexsky:ship_to_world_matrix",
+      "input": "ship",
+      "output": "matrix",
+      "text": "hexsky.page.ship_moreiotas.ship_to_world_matrix"
+    }
+  ]
+}

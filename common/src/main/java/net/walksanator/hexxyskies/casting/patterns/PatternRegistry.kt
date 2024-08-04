@@ -108,6 +108,32 @@ object PatternRegistry {
         OpShipRaycast
     )}
 
+    val SHIP_SLUG_GET = if (Platform.isModLoaded("moreiotas")) {
+        REGISTRY.register("ship_slug_get") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwaqwa", HexDir.EAST),
+            OpShipGetSlug
+        )}
+    } else {null}
+    val SHIP_SLUG_SET = if (Platform.isModLoaded("moreiotas")) {
+        REGISTRY.register("ship_slug_set") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawadwedw", HexDir.EAST),
+            OpShipSetSlug
+        )}
+    } else {null}
+
+    val WORLD_TO_SHIP_MATRIX = if (Platform.isModLoaded("moreiotas")) {
+        REGISTRY.register("world_to_ship_matrix") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwaeawae", HexDir.EAST),
+            OpWorldToShipMatrix
+        )}
+    } else {null}
+    val SHIP_TO_WORLD_MATRIX = if (Platform.isModLoaded("moreiotas")) {
+        REGISTRY.register("ship_to_world_matrix") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawqqdwdqdw", HexDir.EAST),
+            OpShipToWorldMatrix
+        )}
+    } else {null}
+
     fun register() {
         REGISTRY.register()
     }
