@@ -54,7 +54,7 @@
   "hexsky.page.ship_spells.ship_scaling": "Alters the scale of a ship.",
   
   "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
-  "hexsky.page.ship_spells.shiptoworldpos": "Takes a position originating from a ship and transforms it into its worldly equivalent."
+  "hexsky.page.ship_spells.shiptoworldpos": "Takes a position originating from a ship and transforms it into its worldly equivalent.",
 
   "hexsky.entry.ship_wisp": "Wisp Add-ons",
   "hexsky.entry.ship_wisp.entry": "Ships are often difficult for simpler beings to comprehend on their own, so I created these patterns to direct wisps between them.",
@@ -79,5 +79,5 @@
   "hexcasting.action.hexsky:ship_rot_quat": "Bearings Purification",
   "hexsky.page.ship_complexhex.ship_rot_quat": "Returns a ship's rotation as a $(thing)Quaternion",
   "hexcasting.action.hexsky:ship_rot_quat_set": "Bearings Distillation",
-  "hexsky.page.ship_complexhex.ship_rot_quat_set": "Sets a ship's rotation to the provided $(thing)Quaternion. The ship must not be cloaked, and the $(thing)Quaternion must be valid.",
+  "hexsky.page.ship_complexhex.ship_rot_quat_set": "Sets a ship's rotation to the provided $(thing)Quaternion. The ship must not be cloaked, and the $(thing)Quaternion must be valid."
 }
