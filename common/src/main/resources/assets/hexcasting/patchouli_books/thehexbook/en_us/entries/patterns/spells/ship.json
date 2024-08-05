@@ -12,19 +12,19 @@
     },
     {
       "type": "hexcasting:pattern",
-      "op_id": "hexsky:p2s",
-      "anchor": "hexsky:p2s",
-      "input": "vec",
-      "output": "ship",
-      "text": "hexsky.page.ship_spells.p2s"
-    },
-    {
-      "type": "hexcasting:pattern",
       "op_id": "hexsky:cloak",
       "anchor": "hexsky:cloak",
       "input": "ship",
       "output": "bool",
       "text": "hexsky.page.ship_spells.cloak"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:p2s",
+      "anchor": "hexsky:p2s",
+      "input": "vec",
+      "output": "ship",
+      "text": "hexsky.page.ship_spells.p2s"
     },
     {
       "type": "hexcasting:pattern",
@@ -44,30 +44,6 @@
     },
     {
       "type": "hexcasting:pattern",
-      "op_id": "hexsky:ship_weight",
-      "anchor": "hexsky:ship_weight",
-      "input:": "ship",
-      "output": "num",
-      "text": "hexsky.page.ship_spells.ship_weight"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:ship_scale",
-      "anchor": "hexsky:ship_scale",
-      "input:": "ship",
-      "output": "num",
-      "text": "hexsky.page.ship_spells.ship_scale"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:ship_scaling",
-      "anchor": "hexsky:ship_scaling",
-      "input:": "ship, double",
-      "output": "",
-      "text": "hexsky.page.ship_spells.ship_scaling"
-    },
-    {
-      "type": "hexcasting:pattern",
       "op_id": "hexsky:ship_raycast",
       "anchor": "hexsky:ship_raycast",
       "input": "vec, vec",
@@ -84,11 +60,84 @@
     },
     {
       "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_weight",
+      "anchor": "hexsky:ship_weight",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.ship_spells.ship_weight"
+    },
+    {
+      "type": "hexcasting:pattern",
       "op_id": "hexsky:assemble",
       "anchor": "hexsky:assemble",
       "input": "[vec]",
       "output": "ship",
       "text": "hexsky.page.ship_spells.assemble"
+    },
+
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant",
+      "anchor": "hexsky:force_variant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_variant",
+      "anchor": "hexsky:torque_variant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.torque_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_invariant",
+      "anchor": "hexsky:force_invariant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_invariant",
+      "anchor": "hexsky:torque_invariant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.torque_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant_pos",
+      "anchor": "hexsky:force_variant_pos",
+      "input": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_variant_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_invariant_pos",
+      "anchor": "hexsky:force_invariant_pos",
+      "input": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.ship_spells.force_invariant_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scale",
+      "anchor": "hexsky:ship_scale",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.ship_spells.ship_scale"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scaling",
+      "anchor": "hexsky:ship_scaling",
+      "input": "ship, double",
+      "output": "",
+      "text": "hexsky.page.ship_spells.ship_scaling"
     },
     {
       "type": "hexcasting:pattern",
@@ -97,55 +146,6 @@
       "input": "vec",
       "output": "vec",
       "text": "hexsky.page.ship_spells.shiptoworldpos"
-    },
-
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:force_variant",
-      "anchor": "hexsky:force_variant",
-      "input:": "ship, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.force_variant"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:torque_variant",
-      "anchor": "hexsky:torque_variant",
-      "input:": "ship, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.torque_variant"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:force_invariant",
-      "anchor": "hexsky:force_invariant",
-      "input:": "ship, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.force_invariant"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:torque_invariant",
-      "anchor": "hexsky:torque_invariant",
-      "input:": "ship, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.torque_invariant"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:force_variant_pos",
-      "anchor": "hexsky:force_variant_pos",
-      "input:": "ship, vec, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.force_variant_pos"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:force_invariant_pos",
-      "anchor": "hexsky:force_invariant_pos",
-      "input:": "ship, vec, vec",
-      "output": "",
-      "text": "hexsky.page.ship_spells.force_invariant_pos"
     }
   ]
 }
