@@ -21,4 +21,5 @@ dependencies {
     modCompileOnly "vazkii.patchouli:Patchouli:${rootProject.patchouli_version}-FABRIC"
     modCompileOnly "at.petra-k.hexcasting:hexcasting-common-1.20.1:${rootProject.hexcasting_version}"
     modCompileOnly files("${rootProject.rootDir}/libs/hexal-fabric-1.20.1-0.3.0-2.jar")
+    modCompileOnly files("${rootProject.rootDir}/libs/complexhex-fabric-1.20.1-0.1.0.jar")
 }
