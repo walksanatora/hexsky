@@ -9,8 +9,6 @@ import net.minecraft.core.BlockPos
 import net.minecraft.world.phys.Vec3
 import net.walksanator.hexxyskies.casting.VariableMediaAction
 import net.walksanator.hexxyskies.casting.iotas.ShipIota
-import net.walksanator.hexxyskies.ship.getShipDataHolder
-import org.joml.Vector3i
 import org.valkyrienskies.core.util.datastructures.DenseBlockPosSet
 import org.valkyrienskies.mod.common.assembly.createNewShipWithBlocks
 import org.valkyrienskies.mod.common.util.toJOML
