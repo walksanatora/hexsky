@@ -70,6 +70,14 @@
   "hexcasting.action.hexsky:ship_to_world_matrix": "Leeward Purification",
   "hexsky.page.ship_moreiotas.ship_to_world_matrix": "gets the $(thing)Ship-to-World$() transform matrix of the targeted ship",
 
+  "hexsky.entry.ship_complexhex": "ComplexHex ship spells",
+  "hexsky.entry.ship_complexhex.entry": "with a helping hand from the mathematics corps, i have devised a way to view the rotation of these constructs in four dimensions!$(br)the applications are endless...",
+  "hexcasting.action.hexsky:ship_rot_quat": "Bearings Purification",
+  "hexsky.page.ship_complexhex.ship_rot_quat": "gets the rotation of a ship as a $(thing)quaternion",
+  "hexcasting.action.hexsky:ship_rot_quat_set": "Bearings Distillation",
+  "hexsky.page.ship_complexhex.ship_rot_quat_set": "sets a ship's rotation to the provided $(thing)quaternion if the ship isn't cloaked and the quaternion is valid",
+
+
   "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
   "hexsky.page.ship_spells.shiptoworldpos": "Turns a posisition on a ship into a posisition in the world. does nothing if the point is allready in the world"
 }

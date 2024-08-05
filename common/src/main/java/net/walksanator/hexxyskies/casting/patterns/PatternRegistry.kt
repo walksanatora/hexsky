@@ -108,6 +108,7 @@ object PatternRegistry {
         OpShipRaycast
     )}
 
+
     val SHIP_SLUG_GET = if (Platform.isModLoaded("moreiotas")) {
         REGISTRY.register("ship_slug_get") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwaqwa", HexDir.EAST),
@@ -131,6 +132,17 @@ object PatternRegistry {
         REGISTRY.register("ship_to_world_matrix") { ActionRegistryEntry(
             HexPattern.fromAngles("wawqqdwdqdw", HexDir.EAST),
             OpShipToWorldMatrix
+
+    val SHIP_ROT_QUAT = if (Platform.isModLoaded("complexhex")) {
+        REGISTRY.register("ship_rot_quat") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwaawe", HexDir.EAST),
+            OpShipRotQuat
+        )}
+    } else {null}
+    val SHIP_ROT_QUAT_SET = if (Platform.isModLoaded("complexhex")) {
+        REGISTRY.register("ship_rot_quat_set") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwqddqe", HexDir.EAST),
+            OpShipSetRotQuat
         )}
     } else {null}
 

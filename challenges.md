@@ -5,9 +5,9 @@
 * [x] Boatwright's Dstl. (MoreIotas)
     * Sets the slug of a Ship
 
-* [ ] Bearings Purification (Complex Hex)
+* [x] Bearings Purification (Complex Hex)
     * Gets the rotation of a Ship as a Quaternion
-* [ ] Bearings Distillation (Complex Hex)
+* [x] Bearings Distillation (Complex Hex)
     * Sets the rotation of a Ship from a Quaternion
         * Check if Quaternion is correct before use
 
