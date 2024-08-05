@@ -142,14 +142,14 @@
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/mangrove_boat.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    > ComplexHex ship spells</a></li>
+    > ComplexHex Add-ons</a></li>
           <li><a href="#patterns/spells/moreiotas_interop" class="toc-elem "><img
       title="Bamboo Raft"
       alt="Bamboo Raft"
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/bamboo_raft.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    > MoreIotas ship spells</a></li>
+    > MoreIotas Add-ons</a></li>
           <li><a href="#patterns/spells/ship" class="toc-elem "><img
       title="Oak Boat"
       alt="Oak Boat"
@@ -163,7 +163,7 @@
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/cherry_boat.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    > Wisp related ship spells</a></li>
+    > Wisp Add-ons</a></li>
       </ul>
     </details>
 </nav>
@@ -194,7 +194,7 @@
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/mangrove_boat.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    >ComplexHex ship spells<a
+    >ComplexHex Add-ons<a
     href="#table-of-contents"
     class="permalink small"
     title="Jump to top"
@@ -203,7 +203,7 @@
     class="permalink small"
     title="Permalink"
   ><i class="bi bi-link-45deg"></i></a></h3>
-    <p>with a helping hand from the mathematics corps, i have devised a way to view the rotation of these constructs in four dimensions!<br />the applications are endless...</p>
+    <p>In the course of my research, I have found simpler representations of rotation inadequate. As such, I developed patterns that allow for the use of more useful representations of rotation. These patterns are for applying such representations to ships.</p>
 <br />
   <div id="patterns/spells/complexhex_interop@hexsky:ship_rot_quat" class="">
 <h4 class="pattern-title">Bearings Purification (ship → quat)<a
@@ -258,7 +258,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaawe</canvas>
   </details>
-      <p>gets the rotation of a ship as a <span style="color: #8d6acc">quaternion</span></p>
+      <p>Returns a ship&#39;s rotation as a <span style="color: #8d6acc">Quaternion</span></p>
   </div>
 <br />
   <div id="patterns/spells/complexhex_interop@hexsky:ship_rot_quat_set" class="">
@@ -314,7 +314,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwqddqe</canvas>
   </details>
-      <p>sets a ship&#39;s rotation to the provided <span style="color: #8d6acc">quaternion if the ship isn&#39;t cloaked and the quaternion is valid</span></p>
+      <p>Sets a ship&#39;s rotation to the provided <span style="color: #8d6acc">Quaternion. The ship must not be cloaked, and the </span><span style="color: #8d6acc">Quaternion must be valid.</span></p>
   </div>
 <br />
 </div>
@@ -326,7 +326,7 @@
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/bamboo_raft.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    >MoreIotas ship spells<a
+    >MoreIotas Add-ons<a
     href="#table-of-contents"
     class="permalink small"
     title="Jump to top"
@@ -335,7 +335,7 @@
     class="permalink small"
     title="Permalink"
   ><i class="bi bi-link-45deg"></i></a></h3>
-    <p>with this influx of new iotas, i have been able to tap deeper into these strange constructs.<br />i wonder what happens if i delve even further...</p>
+    <p>Developments in manipulating information justify appropriate ship-related patterns.</p>
 <br />
   <div id="patterns/spells/moreiotas_interop@hexsky:ship_slug_get" class="">
 <h4 class="pattern-title">Boatwright&#39;s Prfn. (ship → string | null)<a
@@ -390,7 +390,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaqwa</canvas>
   </details>
-      <p>gets the slug of the targeted ship</p>
+      <p>Returns the name of a ship.</p>
   </div>
 <br />
   <div id="patterns/spells/moreiotas_interop@hexsky:ship_slug_set" class="">
@@ -446,7 +446,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawadwedw</canvas>
   </details>
-      <p>sets the slug of the targeted ship if it is not cloaked</p>
+      <p>Sets the name of a ship. The ship must be uncloaked.</p>
   </div>
 <br />
   <div id="patterns/spells/moreiotas_interop@hexsky:world_to_ship_matrix" class="">
@@ -502,7 +502,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaeawae</canvas>
   </details>
-      <p>gets the <span style="color: #8d6acc">World-to-Ship</span> transform matrix of the targeted ship</p>
+      <p>Returns the <span style="color: #8d6acc">World-to-Ship</span> transform matrix of the targeted ship</p>
   </div>
 <br />
   <div id="patterns/spells/moreiotas_interop@hexsky:ship_to_world_matrix" class="">
@@ -558,7 +558,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawqqdwdqdw</canvas>
   </details>
-      <p>gets the <span style="color: #8d6acc">Ship-to-World</span> transform matrix of the targeted ship</p>
+      <p>Returns the <span style="color: #8d6acc">Ship-to-World</span> transform matrix of the targeted ship</p>
   </div>
 <br />
 </div>
@@ -579,63 +579,9 @@
     class="permalink small"
     title="Permalink"
   ><i class="bi bi-link-45deg"></i></a></h3>
-    <p>Welcome to Navimancy. The art of manipulating ships.<br />Some important keywords before we start.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Force</span> is a <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/spells/basic@hexcasting:add_motion">impulse</a> in a specific direction.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Torque</span> is like force. but instead of being in a direction it is spin.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Variant</span> a Variant force is one that is based on the ships axis.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Invariant</span> a Invariant force is applied based on the worlds axis</p>
+    <p>While various biological, mechanical, or otherwise media-infused creations are able to break from the environment, they are either physically restrained or unable to host solid construction. These patterns deal with assembling and controlling portions of the world as rigid, separated objects.</p>
 <br />
-  <div id="patterns/spells/ship@hexsky:p2s" class="">
-<h4 class="pattern-title">Deckhand&#39;s Purification (vec → ship)<a
-    href="#patterns/spells/ship@hexsky:p2s"
-    class="permalink small"
-    title="Permalink"
-  ><i class="bi bi-link-45deg"></i></a></h4>
-  <details class="details-collapsible">
-    <summary class="collapse-details collapse-spell"></summary>
-    <div class="dropdown spell-settings-dropdown">
-      <span
-        href=""
-        class="dropdown-toggle spell-settings-toggle"
-        data-toggle="dropdown"
-        role="button"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="bi bi-gear-fill"></i>
-      </span>
-      <ul class="dropdown-menu">
-        <li class="dropdown-submenu">
-          <a
-            href=""
-            class="dropdown-toggle"
-            data-toggle="dropdown"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >Renders</a>
-          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
-        </li>
-        <li class="dropdown-submenu">
-          <a
-            href=""
-            class="dropdown-toggle"
-            data-toggle="dropdown"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >Palettes</a>
-          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
-        </li>
-      </ul>
-    </div>
-      <canvas
-        class="spell-viz"
-        width="216"
-        height="216"
-        data-string="wawwwa"
-        data-start="east"
-        data-per-world="False"
-      >Your browser does not support visualizing patterns. Pattern code: wawwwa</canvas>
-  </details>
-      <p>takes a posisition and gets the ship it is apart of. if it is not <a href="#patterns/spells/ship@hexsky:cloak">cloaked</a></p>
-  </div>
+    <p>These objects can move untethered, and allow for an enormous range of invention. </p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Ships</span> are freely-moving objects which have separated from the world.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Force</span> is an <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/spells/basic@hexcasting:add_motion">impulse</a> in a specific direction.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Torque</span> is akin to Force, but concerns rotation exclusively.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Variant</span> forces are based on the ship&#39;s axes.</p><p class="fake-li " style="--level: 1;"><span style="color: #8d6acc">Invariant</span> forces are applied based on the world&#39;s.</p>
 <br />
   <div id="patterns/spells/ship@hexsky:cloak" class="">
 <h4 class="pattern-title">Cloaking Purification (ship → bool)<a
@@ -690,7 +636,63 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: dwwwdw</canvas>
   </details>
-      <p>toggles the ship&#39;s cloak and returns the ship&#39;s cloak state</p>
+      <p>Toggles and returns the state of a ship&#39;s cloak. This pattern acts as security for a ship, obscuring new references from being obtained. Exercise caution.</p>
+  </div>
+<br />
+  <div id="patterns/spells/ship@hexsky:p2s" class="">
+<h4 class="pattern-title">Deckhand&#39;s Purification (vec → ship)<a
+    href="#patterns/spells/ship@hexsky:p2s"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="wawwwa"
+        data-start="east"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: wawwwa</canvas>
+  </details>
+      <p>Takes a position and returns the ship that it corresponds to. Blocked by <a href="#patterns/spells/ship@hexsky:cloak">Cloak</a>.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_pos" class="">
@@ -746,7 +748,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawaa</canvas>
   </details>
-      <p>functions like <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:entity_pos/eye">Compass Purification</a> but instead returns the center of mass on the ship</p>
+      <p>Analogous to <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:entity_pos/eye">Compass Purification</a>, but instead returns the position of a ship&#39;s Center of Mass.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_rot" class="">
@@ -802,7 +804,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaawa</canvas>
   </details>
-      <p>functions like <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:get_entity_look">Alidade&#39;s Purification</a> but gets the ships <a href="#patterns/spells/ship">forward</a> direction</p>
+      <p>Analogous to <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:get_entity_look">Alidade&#39;s Purification</a>, but instead gets the ship&#39;s <a href="#patterns/spells/ship">forward</a> direction</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_weight" class="">
@@ -858,7 +860,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawde</canvas>
   </details>
-      <p>returns the total weight of the ship.<br />Usually forces on the ship are multiplied by the mass of a ship</p>
+      <p>Takes a ship and returns its total mass.<br />Forces applied by Hexes are multiplied by this number.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_scale" class="">
@@ -914,7 +916,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwa</canvas>
   </details>
-      <p>returns the scale of the ship.</p>
+      <p>Takes a ship and returns its current scale.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_scaling" class="">
@@ -970,7 +972,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: awwwaa</canvas>
   </details>
-      <p>Scales the targeted ship to the given scale between x1/4 to x4.</p>
+      <p>Alters the scale of a ship.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:ship_raycast" class="">
@@ -1026,7 +1028,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaddwaa</canvas>
   </details>
-      <p>functions like <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:raycast">Archer&#39;s Distillation</a> but instead returns a ship at the position if they are not <a href="#patterns/spells/ship@hexsky:cloak">cloaked</a></p>
+      <p>Analogous to <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/basics@hexcasting:raycast">Archer&#39;s Distillation</a>, but instead returns a ship. Blocked by <a href="#patterns/spells/ship@hexsky:cloak">Cloak</a>.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:zone_ships" class="">
@@ -1082,7 +1084,63 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwaqaweeee</canvas>
   </details>
-      <p>functions like <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/entities@hexcasting:zone_entity">Zone Distillation</a> but instead returns a list of ships near the position if they are not <a href="#patterns/spells/ship@hexsky:cloak">cloaked</a></p>
+      <p>Analogous to <a href="https://hexcasting.hexxy.media/v/0.11.1-7/1.0/en_us#patterns/entities@hexcasting:zone_entity">Zone Distillation</a>, but instead returns a list of ships. Blocked by <a href="#patterns/spells/ship@hexsky:cloak">Cloak</a>.</p>
+  </div>
+<br />
+  <div id="patterns/spells/ship@hexsky:ship_weight" class="">
+<h4 class="pattern-title">Tonnage Purification (ship → num)<a
+    href="#patterns/spells/ship@hexsky:ship_weight"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="wawwwawde"
+        data-start="east"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: wawwwawde</canvas>
+  </details>
+      <p>Takes a ship and returns its total mass.<br />Forces applied by Hexes are multiplied by this number.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:assemble" class="">
@@ -1138,67 +1196,11 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwdeeeeeqa</canvas>
   </details>
-      <p>takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored</p>
-  </div>
-<br />
-  <div id="patterns/spells/ship@hexsky:shiptoworldpos" class="">
-<h4 class="pattern-title">Worldly Purification (vec → vec)<a
-    href="#patterns/spells/ship@hexsky:shiptoworldpos"
-    class="permalink small"
-    title="Permalink"
-  ><i class="bi bi-link-45deg"></i></a></h4>
-  <details class="details-collapsible">
-    <summary class="collapse-details collapse-spell"></summary>
-    <div class="dropdown spell-settings-dropdown">
-      <span
-        href=""
-        class="dropdown-toggle spell-settings-toggle"
-        data-toggle="dropdown"
-        role="button"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <i class="bi bi-gear-fill"></i>
-      </span>
-      <ul class="dropdown-menu">
-        <li class="dropdown-submenu">
-          <a
-            href=""
-            class="dropdown-toggle"
-            data-toggle="dropdown"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >Renders</a>
-          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
-        </li>
-        <li class="dropdown-submenu">
-          <a
-            href=""
-            class="dropdown-toggle"
-            data-toggle="dropdown"
-            role="button"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >Palettes</a>
-          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
-        </li>
-      </ul>
-    </div>
-      <canvas
-        class="spell-viz"
-        width="216"
-        height="216"
-        data-string="wawwwaawawwawwqqwq"
-        data-start="east"
-        data-per-world="False"
-      >Your browser does not support visualizing patterns. Pattern code: wawwwaawawwawwqqwq</canvas>
-  </details>
-      <p>Turns a posisition on a ship into a posisition in the world. does nothing if the point is allready in the world</p>
+      <p>Takes a list of vectors corresponsing to static blocks in the world, and transforms them into a separated free-floating object. Blocks outside of my ambit are ignored.</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:force_variant" class="">
-<h4 class="pattern-title">Helmsman&#39;s Yeet (ship, vec →)<a
+<h4 class="pattern-title">Helmsman&#39;s Push (ship, vec →)<a
     href="#patterns/spells/ship@hexsky:force_variant"
     class="permalink small"
     title="Permalink"
@@ -1310,7 +1312,7 @@
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:force_invariant" class="">
-<h4 class="pattern-title">Nature&#39;s Yeet (ship, vec →)<a
+<h4 class="pattern-title">Nature&#39;s Push (ship, vec →)<a
     href="#patterns/spells/ship@hexsky:force_invariant"
     class="permalink small"
     title="Permalink"
@@ -1362,7 +1364,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawawwqqqwwaqw</canvas>
   </details>
-      <p>Applies a <span style="color: #8d6acc">Invariant Force</span> to the ship in the specified direction</p>
+      <p>Applies an <span style="color: #8d6acc">Invariant Force</span> to the ship in the specified direction</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:torque_invariant" class="">
@@ -1418,7 +1420,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawawwqqqwwaqqd</canvas>
   </details>
-      <p>Applies a <span style="color: #8d6acc">Invariant Torque</span> to the ship in the specified direction</p>
+      <p>Applies an <span style="color: #8d6acc">Invariant Torque</span> to the ship in the specified direction</p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:force_variant_pos" class="">
@@ -1474,7 +1476,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawawwqqqwwaqqdq</canvas>
   </details>
-      <p>Applies a <span style="color: #8d6acc">Variant Force</span> to the ship in the specified direction with a specified offset from the <a href="#patterns/spells/ship@hexsky:ship_pos">center of mass</a></p>
+      <p>Applies an <span style="color: #8d6acc">Variant Force</span> to the ship in the specified direction with a specified offset from the <a href="#patterns/spells/ship@hexsky:ship_pos">Center of Mass</a></p>
   </div>
 <br />
   <div id="patterns/spells/ship@hexsky:force_invariant_pos" class="">
@@ -1530,7 +1532,175 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwawawwqqqwwaqww</canvas>
   </details>
-      <p>Applies a <span style="color: #8d6acc">Invariant Force</span> to the ship in the specified direction with a specified offset from the <a href="#patterns/spells/ship@hexsky:ship_pos">center of mass</a></p>
+      <p>Applies an <span style="color: #8d6acc">Invariant Force</span> to the ship in the specified direction with a specified offset from the <a href="#patterns/spells/ship@hexsky:ship_pos">Center of Mass</a></p>
+  </div>
+<br />
+  <div id="patterns/spells/ship@hexsky:ship_scale" class="">
+<h4 class="pattern-title">Magnification Prfn. (ship → num)<a
+    href="#patterns/spells/ship@hexsky:ship_scale"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="wawwa"
+        data-start="east"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: wawwa</canvas>
+  </details>
+      <p>Takes a ship and returns its current scale.</p>
+  </div>
+<br />
+  <div id="patterns/spells/ship@hexsky:ship_scaling" class="">
+<h4 class="pattern-title">Nature&#39;s Amusement (ship, double →)<a
+    href="#patterns/spells/ship@hexsky:ship_scaling"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="awwwaa"
+        data-start="east"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: awwwaa</canvas>
+  </details>
+      <p>Alters the scale of a ship.</p>
+  </div>
+<br />
+  <div id="patterns/spells/ship@hexsky:shiptoworldpos" class="">
+<h4 class="pattern-title">Worldly Purification (vec → vec)<a
+    href="#patterns/spells/ship@hexsky:shiptoworldpos"
+    class="permalink small"
+    title="Permalink"
+  ><i class="bi bi-link-45deg"></i></a></h4>
+  <details class="details-collapsible">
+    <summary class="collapse-details collapse-spell"></summary>
+    <div class="dropdown spell-settings-dropdown">
+      <span
+        href=""
+        class="dropdown-toggle spell-settings-toggle"
+        data-toggle="dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="bi bi-gear-fill"></i>
+      </span>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Renders</a>
+          <ul class="dropdown-menu dropdown-menu-left render-dropdowns"></ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a
+            href=""
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Palettes</a>
+          <ul class="dropdown-menu dropdown-menu-left palette-dropdowns"></ul>
+        </li>
+      </ul>
+    </div>
+      <canvas
+        class="spell-viz"
+        width="216"
+        height="216"
+        data-string="wawwwaawawwawwqqwq"
+        data-start="east"
+        data-per-world="False"
+      >Your browser does not support visualizing patterns. Pattern code: wawwwaawawwawwqqwq</canvas>
+  </details>
+      <p>Takes a position originating from a ship and transforms it into its worldly equivalent.</p>
   </div>
 <br />
 </div>
@@ -1542,7 +1712,7 @@
       src="https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/a14c64362abe4a12c2dfd87f8d1673af9d1b09f4/data/1.20.2/items/cherry_boat.png"
       loading="lazy"
       class="item-texture  texture pixelated"
-    >Wisp related ship spells<a
+    >Wisp Add-ons<a
     href="#table-of-contents"
     class="permalink small"
     title="Jump to top"
@@ -1551,7 +1721,7 @@
     class="permalink small"
     title="Permalink"
   ><i class="bi bi-link-45deg"></i></a></h3>
-    <p>it appears my favorite ball of media is able to anchor it&#39;s self onto any ships that is is within.<br />these patterns dont appear to do anything when cast by anything other than a wisp</p>
+    <p>Ships are often difficult for simpler beings to comprehend on their own, so I created these patterns to direct wisps between them.</p>
 <br />
   <div id="patterns/spells/wisp_interop@hexsky:embark" class="">
 <h4 class="pattern-title">Embark (ship | vec →)<a
@@ -1606,7 +1776,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwdewdwewd</canvas>
   </details>
-      <p>puts the wisp that casted this into the ship (if it is nearby)</p>
+      <p>Attaches the wisp to the ship. It must be near. This must be cast by a wisp; trying to cast it through a staff will fail rather spectacularly.</p>
   </div>
 <br />
   <div id="patterns/spells/wisp_interop@hexsky:disembark" class="">
@@ -1662,7 +1832,7 @@
         data-per-world="False"
       >Your browser does not support visualizing patterns. Pattern code: wawwwqawqwawq</canvas>
   </details>
-      <p>has the wisp detach from the ship and go back into the world</p>
+      <p>Detaches the wisp from a ship. This must be cast by a wisp; trying to cast it through a staff will fail rather spectacularly.</p>
   </div>
 <br />
 </div>
