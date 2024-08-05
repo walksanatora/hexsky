@@ -19,10 +19,10 @@
   "hexsky.page.ship_spells.ship_rot": "Analogous to $(l:patterns/basics#hexcasting:get_entity_look)Alidade's Purification$(), but instead gets the ship's $(l:patterns/spells/ship)forward$() direction",
 
   "hexcasting.action.hexsky:ship_raycast": "Crow's Distillation",
-  "hexsky.page.ship_spells.ship_raycast": "Analogous to $(l:patterns/entity#hexcasting:raycast)Archer's Distillation$(), but instead returns a ship.",
+  "hexsky.page.ship_spells.ship_raycast": "Analogous to $(l:patterns/basics#hexcasting:raycast)Archer's Distillation$(), but instead returns a ship.",
 
   "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ship",
-  "hexsky.page.ship_spells.zone_ships": "Analogous to $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$(), but instead returns a list of ships.",
+  "hexsky.page.ship_spells.zone_ships": "Analogous to $(l:patterns/entities#hexcasting:zone_entity)Zone Distillation$(), but instead returns a list of ships.",
 
   "hexcasting.action.hexsky:ship_weight": "Tonnage Purification",
   "hexsky.page.ship_spells.ship_weight": "Takes a ship and returns its total mass.$(br)Forces applied by Hexes are multiplied by this number.",
