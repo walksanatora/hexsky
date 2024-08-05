@@ -70,19 +70,6 @@ object PatternRegistry {
         OpAssemble
     )}
 
-    val EMBARK = if (Platform.isModLoaded("hexal")) {
-        REGISTRY.register("embark") { ActionRegistryEntry(
-            HexPattern.fromAngles("wawwwdewdwewd", HexDir.EAST),
-            OpEmbark
-        )}
-    } else {null}
-    val DISEMBARK = if (Platform.isModLoaded("hexal")) {
-        REGISTRY.register("disembark") { ActionRegistryEntry(
-            HexPattern.fromAngles("wawwwqawqwawq", HexDir.EAST),
-            OpDisembark
-        )}
-    } else {null}
-
     val SHIP_TO_WORLD_POS = REGISTRY.register("shiptoworldpos") { ActionRegistryEntry(
         HexPattern.fromAngles("wawwwaawawwawwqqwq", HexDir.EAST),
         OpVec2World
@@ -108,6 +95,18 @@ object PatternRegistry {
         OpShipRaycast
     )}
 
+    val EMBARK = if (Platform.isModLoaded("hexal")) {
+        REGISTRY.register("embark") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwdewdwewd", HexDir.EAST),
+            OpEmbark
+        )}
+    } else {null}
+    val DISEMBARK = if (Platform.isModLoaded("hexal")) {
+        REGISTRY.register("disembark") { ActionRegistryEntry(
+            HexPattern.fromAngles("wawwwqawqwawq", HexDir.EAST),
+            OpDisembark
+        )}
+    } else {null}
 
     val SHIP_SLUG_GET = if (Platform.isModLoaded("moreiotas")) {
         REGISTRY.register("ship_slug_get") { ActionRegistryEntry(
@@ -121,7 +120,6 @@ object PatternRegistry {
             OpShipSetSlug
         )}
     } else {null}
-
     val WORLD_TO_SHIP_MATRIX = if (Platform.isModLoaded("moreiotas")) {
         REGISTRY.register("world_to_ship_matrix") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwaeawae", HexDir.EAST),
@@ -132,6 +130,7 @@ object PatternRegistry {
         REGISTRY.register("ship_to_world_matrix") { ActionRegistryEntry(
             HexPattern.fromAngles("wawqqdwdqdw", HexDir.EAST),
             OpShipToWorldMatrix
+        )}} else {null}
 
     val SHIP_ROT_QUAT = if (Platform.isModLoaded("complexhex")) {
         REGISTRY.register("ship_rot_quat") { ActionRegistryEntry(
