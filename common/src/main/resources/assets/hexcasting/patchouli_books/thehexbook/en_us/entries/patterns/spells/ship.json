@@ -11,6 +11,10 @@
       "text": "hexsky.entry.ship_spells.entry"
     },
     {
+      "type": "patchouli:text",
+      "text": "hexsky.entry.ship_spells.terms"
+    },
+    {
       "type": "hexcasting:pattern",
       "op_id": "hexsky:cloak",
       "anchor": "hexsky:cloak",
