@@ -1,8 +1,8 @@
 ## Tech's Challenges
 *A personal To-Do List for TechTastic*
-* [ ] Boatwright's Prfn. (MoreIotas)
+* [x] Boatwright's Prfn. (MoreIotas)
     * Get the slug of a Ship
-*[ ] Boatwright's Dstl. (MoreIotas)
+* [x] Boatwright's Dstl. (MoreIotas)
     * Sets the slug of a Ship
 
 * [x] Bearings Purification (Complex Hex)
@@ -11,9 +11,9 @@
     * Sets the rotation of a Ship from a Quaternion
         * Check if Quaternion is correct before use
 
-* [ ] Windward Purification (MoreIotas)
+* [x] Windward Purification (MoreIotas)
     * Gets the Ship-To-World Matrix
-* [ ] Leeward Purification (MoreIotas)
+* [x] Leeward Purification (MoreIotas)
     * Gets the World-To-Ship Matrix
 
 * Hexed Ships
