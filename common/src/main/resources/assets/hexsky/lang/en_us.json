@@ -8,10 +8,10 @@
   "hexsky.entry.ship_spells.terms": "These objects can move untethered, and allow for an enormous range of invention. $(li)$(thing)Ships$() are freely-moving objects which have separated from the world.$(li)$(thing)Force$() is an $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is akin to Force, but affects rotation exclusively.$(li)$(thing)Variant$() forces are based on the ship's axes.$(li)$(thing)Invariant$() forces are applied based on the world's.$()",
 
   "hexcasting.action.hexsky:cloak": "Cloaking Purification",
-  "hexsky.page.ship_spells.cloak": "Toggles and returns the state of a ship's protection. This pattern acts as security for a ship, obscuring new references from being obtained. If all references to a cloaked ship are lost, it will be forever unobservable to Hexes.",
+  "hexsky.page.ship_spells.cloak": "Toggles and returns the state of a ship's cloak. This pattern acts as security for a ship, obscuring new references from being obtained. Exercise caution.",
   
   "hexcasting.action.hexsky:p2s": "Deckhand's Purification",
-  "hexsky.page.ship_spells.p2s": "Takes a position and returns the ship that the position corresponds to.",
+  "hexsky.page.ship_spells.p2s": "Takes a position and returns the ship that it corresponds to. Blocked by $(l:patterns/spells/ship#hexsky:cloak)Cloak$().",
 
   "hexcasting.action.hexsky:ship_pos": "Ship Compass Prfn.",
   "hexsky.page.ship_spells.ship_pos": "Analogous to $(l:patterns/basics#hexcasting:entity_pos/eye)Compass Purification$(), but instead returns the position of a ship's Center of Mass.",
@@ -20,10 +20,10 @@
   "hexsky.page.ship_spells.ship_rot": "Analogous to $(l:patterns/basics#hexcasting:get_entity_look)Alidade's Purification$(), but instead gets the ship's $(l:patterns/spells/ship)forward$() direction",
 
   "hexcasting.action.hexsky:ship_raycast": "Crow's Distillation",
-  "hexsky.page.ship_spells.ship_raycast": "Analogous to $(l:patterns/basics#hexcasting:raycast)Archer's Distillation$(), but instead returns a ship.",
+  "hexsky.page.ship_spells.ship_raycast": "Analogous to $(l:patterns/basics#hexcasting:raycast)Archer's Distillation$(), but instead returns a ship. Blocked by $(l:patterns/spells/ship#hexsky:cloak)Cloak$().",
 
   "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ship",
-  "hexsky.page.ship_spells.zone_ships": "Analogous to $(l:patterns/entities#hexcasting:zone_entity)Zone Distillation$(), but instead returns a list of ships.",
+  "hexsky.page.ship_spells.zone_ships": "Analogous to $(l:patterns/entities#hexcasting:zone_entity)Zone Distillation$(), but instead returns a list of ships. Blocked by $(l:patterns/spells/ship#hexsky:cloak)Cloak$().",
 
   "hexcasting.action.hexsky:ship_weight": "Tonnage Purification",
   "hexsky.page.ship_spells.ship_weight": "Takes a ship and returns its total mass.$(br)Forces applied by Hexes are multiplied by this number.",
