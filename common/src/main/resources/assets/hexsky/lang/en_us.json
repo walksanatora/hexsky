@@ -5,7 +5,7 @@
 
   "hexsky.entry.ship_spells": "Ship Manipulation",
   "hexsky.entry.ship_spells.entry": "While various biological, mechanical, or otherwise media-infused creations are able to break from the environment, they are either physically restrained or unable to host solid construction. These patterns deal with assembling and controlling portions of the world as rigid, separated objects.",
-  "hexsky.entry.ship_spells.terms": "These objects can move untethered, and allow for an enormous range of invention. $(li)$(thing)Ships$() are freely-moving objects which have separated from the world.$(li)$(thing)Force$() is an $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is akin to Force, but affects rotation exclusively.$(li)$(thing)Variant$() forces are based on the ship's axes.$(li)$(thing)Invariant$() forces are applied based on the world's.$()",
+  "hexsky.entry.ship_spells.terms": "These objects can move untethered, and allow for an enormous range of invention. $(li)$(thing)Ships$() are freely-moving objects which have separated from the world.$(li)$(thing)Force$() is an $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is akin to Force, but concerns rotation exclusively.$(li)$(thing)Variant$() forces are based on the ship's axes.$(li)$(thing)Invariant$() forces are applied based on the world's.$()",
 
   "hexcasting.action.hexsky:cloak": "Cloaking Purification",
   "hexsky.page.ship_spells.cloak": "Toggles and returns the state of a ship's cloak. This pattern acts as security for a ship, obscuring new references from being obtained. Exercise caution.",
