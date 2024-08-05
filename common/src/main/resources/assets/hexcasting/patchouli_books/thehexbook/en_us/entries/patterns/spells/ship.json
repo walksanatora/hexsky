@@ -11,12 +11,8 @@
       "text": "hexsky.entry.ship_spells.entry"
     },
     {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:p2s",
-      "anchor": "hexsky:p2s",
-      "input": "vec",
-      "output": "ship",
-      "text": "hexsky.page.ship_spells.p2s"
+      "type": "patchouli:text",
+      "text": "hexsky.entry.ship_spells.terms"
     },
     {
       "type": "hexcasting:pattern",
@@ -25,6 +21,14 @@
       "input": "ship",
       "output": "bool",
       "text": "hexsky.page.ship_spells.cloak"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:p2s",
+      "anchor": "hexsky:p2s",
+      "input": "vec",
+      "output": "ship",
+      "text": "hexsky.page.ship_spells.p2s"
     },
     {
       "type": "hexcasting:pattern",
@@ -84,19 +88,19 @@
     },
     {
       "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_weight",
+      "anchor": "hexsky:ship_weight",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.ship_spells.ship_weight"
+    },
+    {
+      "type": "hexcasting:pattern",
       "op_id": "hexsky:assemble",
       "anchor": "hexsky:assemble",
       "input": "[vec]",
       "output": "ship",
       "text": "hexsky.page.ship_spells.assemble"
-    },
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexsky:shiptoworldpos",
-      "anchor": "hexsky:shiptoworldpos",
-      "input": "vec",
-      "output": "vec",
-      "text": "hexsky.page.ship_spells.shiptoworldpos"
     },
 
     {
@@ -146,6 +150,30 @@
       "input": "ship, vec, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_invariant_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scale",
+      "anchor": "hexsky:ship_scale",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.ship_spells.ship_scale"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scaling",
+      "anchor": "hexsky:ship_scaling",
+      "input": "ship, double",
+      "output": "",
+      "text": "hexsky.page.ship_spells.ship_scaling"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:shiptoworldpos",
+      "anchor": "hexsky:shiptoworldpos",
+      "input": "vec",
+      "output": "vec",
+      "text": "hexsky.page.ship_spells.shiptoworldpos"
     }
   ]
 }
