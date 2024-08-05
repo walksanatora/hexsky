@@ -1,7 +1,7 @@
 {
   "name": "hexsky.entry.ship_moreiotas",
   "category": "hexcasting:patterns/spells",
-  "icon": "minecraft:bamboo_boat",
+  "icon": "minecraft:bamboo_raft",
   "flag": "mod:moreiotas",
   "sortnum": 10,
   "advancement": "hexcasting:root",

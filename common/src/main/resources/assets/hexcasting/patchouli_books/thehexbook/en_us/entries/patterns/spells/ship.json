@@ -46,7 +46,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:ship_weight",
       "anchor": "hexsky:ship_weight",
-      "input:": "ship",
+      "input": "ship",
       "output": "num",
       "text": "hexsky.page.ship_spells.ship_weight"
     },
@@ -54,7 +54,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:ship_scale",
       "anchor": "hexsky:ship_scale",
-      "input:": "ship",
+      "input": "ship",
       "output": "num",
       "text": "hexsky.page.ship_spells.ship_scale"
     },
@@ -62,7 +62,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:ship_scaling",
       "anchor": "hexsky:ship_scaling",
-      "input:": "ship, double",
+      "input": "ship, double",
       "output": "",
       "text": "hexsky.page.ship_spells.ship_scaling"
     },
@@ -103,7 +103,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:force_variant",
       "anchor": "hexsky:force_variant",
-      "input:": "ship, vec",
+      "input": "ship, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_variant"
     },
@@ -111,7 +111,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:torque_variant",
       "anchor": "hexsky:torque_variant",
-      "input:": "ship, vec",
+      "input": "ship, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.torque_variant"
     },
@@ -119,7 +119,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:force_invariant",
       "anchor": "hexsky:force_invariant",
-      "input:": "ship, vec",
+      "input": "ship, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_invariant"
     },
@@ -127,7 +127,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:torque_invariant",
       "anchor": "hexsky:torque_invariant",
-      "input:": "ship, vec",
+      "input": "ship, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.torque_invariant"
     },
@@ -135,7 +135,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:force_variant_pos",
       "anchor": "hexsky:force_variant_pos",
-      "input:": "ship, vec, vec",
+      "input": "ship, vec, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_variant_pos"
     },
@@ -143,7 +143,7 @@
       "type": "hexcasting:pattern",
       "op_id": "hexsky:force_invariant_pos",
       "anchor": "hexsky:force_invariant_pos",
-      "input:": "ship, vec, vec",
+      "input": "ship, vec, vec",
       "output": "",
       "text": "hexsky.page.ship_spells.force_invariant_pos"
     }

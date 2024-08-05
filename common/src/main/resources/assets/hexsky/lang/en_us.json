@@ -26,10 +26,10 @@
   "hexsky.page.ship_spells.ship_scale": "returns the scale of the ship.",
 
   "hexcasting.action.hexsky:ship_raycast": "Crow's Distillation",
-  "hexsky.page.ship_spells.ship_raycast": "functions like $(l:patterns/entity#hexcasting:raycast)Archer's Distillation$() but instead returns a ship at the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
+  "hexsky.page.ship_spells.ship_raycast": "functions like $(l:patterns/basics#hexcasting:raycast)Archer's Distillation$() but instead returns a ship at the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
 
   "hexcasting.action.hexsky:zone_ships": "Zone Dstl.: Ship",
-  "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entity#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
+  "hexsky.page.ship_spells.zone_ships": "functions like $(l:patterns/entities#hexcasting:zone_entity)Zone Distillation$() but instead returns a list of ships near the position if they are not $(l:patterns/spells/ship#hexsky:cloak)cloaked$()",
 
   "hexcasting.action.hexsky:assemble": "Assemble",
   "hexsky.page.ship_spells.assemble": "takes a list of blocks and assembles them into a ship. blocks outside of ambit are ignored",
