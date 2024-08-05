@@ -4,7 +4,7 @@
   "hexsky.mishap.invalid.reason.null": "Ship does not exist!",
 
   "hexsky.entry.ship_spells": "Ship Manipulation",
-  "hexsky.entry.ship_spells.entry": "While various biological, mechanical, or otherwise media-infused creations are able to break from the environment, such methods are inadequate for all-terrain locomotion. As such, I have devised a way to assemble portions of the world as separated objects, allowing them to move about freely.$(p) These patterns serve as an intermediary between myself and such portions of the world.$(br)Useful terminology:$(li)$(thing)Ships$() are freely-moving objects which have separated from the world.$(li)$(thing)Force$() is an $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is akin to Force, but affects rotation exclusively.$(li)$(thing)Variant$() A Variant force is based on the ship's axes.$(li)$(thing)Invariant$() an Invariant force is applied based on the world's.$()",
+  "hexsky.entry.ship_spells.entry": "While various biological, mechanical, or otherwise media-infused creations are able to break from the environment, they are either unable to move completely freely or unable to host solid constructions. As such, I have devised a way to assemble portions of the world as separated objects, allowing for more effective movement.$(p) These patterns serve as an intermediary between myself and such portions of the world.$(br)Useful terminology:$(li)$(thing)Ships$() are freely-moving objects which have separated from the world.$(li)$(thing)Force$() is an $(l:patterns/spells/basic#hexcasting:add_motion)impulse$() in a specific direction.$(li)$(thing)Torque$() is akin to Force, but affects rotation exclusively.$(li)$(thing)Variant$() A Variant force is based on the ship's axes.$(li)$(thing)Invariant$() an Invariant force is applied based on the world's.$()",
 
   "hexcasting.action.hexsky:cloak": "Cloaking Purification",
   "hexsky.page.ship_spells.cloak": "Toggles and returns the state of a ship's protection. This pattern acts as security for a ship, obscuring new references from being obtained. If all references to a cloaked ship are lost, it will be forever unobservable to Hexes.",
@@ -55,14 +55,14 @@
   "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
   "hexsky.page.ship_spells.shiptoworldpos": "Takes a position originating from a ship and transforms it into its worldly equivalent."
 
-  "hexsky.entry.ship_wisp": "Wisp Patterns",
+  "hexsky.entry.ship_wisp": "Wisp Add-ons",
   "hexsky.entry.ship_wisp.entry": "Ships are often difficult for simpler beings to comprehend on their own, so I created these patterns to direct wisps between them.",
   "hexcasting.action.hexsky:embark": "Embark",
   "hexsky.page.ship_wisp.embark": "Attaches the wisp to the ship. It must be near. This must be cast by a wisp; trying to cast it through a staff will fail rather spectacularly.",
   "hexcasting.action.hexsky:disembark": "Disembark",
   "hexsky.page.ship_wisp.disembark": "Detaches the wisp from a ship. This must be cast by a wisp; trying to cast it through a staff will fail rather spectacularly.",
 
-  "hexsky.entry.ship_moreiotas": "MoreIotas Patterns",
+  "hexsky.entry.ship_moreiotas": "MoreIotas Add-ons",
   "hexsky.entry.ship_moreiotas.entry": "Developments in manipulating information justify appropriate ship-related patterns.",
   "hexcasting.action.hexsky:ship_slug_get": "Boatwright's Prfn.",
   "hexsky.page.ship_moreiotas.ship_slug_get": "Returns the name of a ship.",
@@ -73,8 +73,8 @@
   "hexcasting.action.hexsky:ship_to_world_matrix": "Leeward Purification",
   "hexsky.page.ship_moreiotas.ship_to_world_matrix": "Returns the $(thing)Ship-to-World$() transform matrix of the targeted ship",
 
-  "hexsky.entry.ship_complexhex": "ComplexHex Patterns",
-  "hexsky.entry.ship_complexhex.entry": "In the course of my research, I have found simpler representations of rotation inadequate. These patterns allow for more freedom, particularly in the pursuit of smoother movements.",
+  "hexsky.entry.ship_complexhex": "ComplexHex Add-ons",
+  "hexsky.entry.ship_complexhex.entry": "In the course of my research, I have found simpler representations of rotation inadequate. As such, I developed patterns that allow for the use of more useful representations of rotation. These patterns are for applying such representations to ships.",
   "hexcasting.action.hexsky:ship_rot_quat": "Bearings Purification",
   "hexsky.page.ship_complexhex.ship_rot_quat": "Returns a ship's rotation as a $(thing)Quaternion",
   "hexcasting.action.hexsky:ship_rot_quat_set": "Bearings Distillation",
