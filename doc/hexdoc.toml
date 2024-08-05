@@ -1,7 +1,7 @@
 modid = "hexsky"
 book = "hexcasting:thehexbook"
 default_lang = "en_us"
-default_branch = "main"
+default_branch = "master"
 
 resource_dirs = [  # top takes priority
     "resources",
