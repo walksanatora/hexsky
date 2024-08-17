@@ -1,4 +1,4 @@
-package org.valkyrienskies.mod.common.world
+package net.walksanator.hexxyskies.util
 
 import at.petrak.hexcasting.common.casting.actions.raycast.OpEntityRaycast
 import net.minecraft.world.entity.Entity
