@@ -53,6 +53,7 @@
   "hexsky.page.navimancy.basic.shiptoworldpos": "Takes a position originating from a ship and transforms it into its worldly equivalent.",
 
 
+
   "hexsky.entry.navimancy.applied": "Applied Navimancy",
   "hexcasting.action.hexsky:assemble": "Assemble",
   "hexsky.page.navimancy.applied.assemble": "Takes a list of vectors corresponding to static blocks in the world, and transforms them into a separated free-floating object. Blocks outside of my ambit are ignored.",
