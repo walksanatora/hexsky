@@ -13,6 +13,7 @@ import org.valkyrienskies.core.apigame.world.ServerShipWorldCore
 import org.valkyrienskies.core.impl.game.ShipTeleportDataImpl
 import org.valkyrienskies.mod.common.shipObjectWorld
 import org.valkyrienskies.mod.common.util.toMinecraft
+import org.valkyrienskies.mod.common.vsCore
 import org.valkyrienskies.mod.common.vsPipeline
 import kotlin.math.abs
 
@@ -29,7 +30,7 @@ class OpShipScaling : SpellAction {
 
     private class Spell(private val ship: ServerShip, private val scale: Double): RenderedSpell {
         override fun cast(env: CastingEnvironment) {
-            env.world.shipObjectWorld.teleportShip(ship, ShipTeleportDataImpl(newScale = scale))
+            vsCore.scaleShip(env.world.shipObjectWorld, ship, scale)
         }
     }
 }
