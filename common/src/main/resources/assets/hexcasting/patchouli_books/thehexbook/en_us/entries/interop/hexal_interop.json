@@ -8,7 +8,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "hexsky.page.hexal.wisp_entry"
+      "text": "hexsky.page.hexal.wisp.entry"
     },
     {
       "type": "hexcasting:pattern",

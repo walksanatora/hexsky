@@ -95,6 +95,11 @@ object PatternRegistry {
         OpShipRaycast
     )}
 
+    val BLOCK_MASS = REGISTRY.register("block_mass") { ActionRegistryEntry(
+        HexPattern.fromAngles("wawwwqaqdeee", HexDir.EAST),
+        OpBlockMass
+    )}
+
     val EMBARK = if (Platform.isModLoaded("hexal")) {
         REGISTRY.register("embark") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwdewdwewd", HexDir.EAST),

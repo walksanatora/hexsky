@@ -76,6 +76,14 @@
       "input": "vec",
       "output": "vec",
       "text": "hexsky.page.navimancy.basic.shiptoworldpos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:block_mass",
+      "anchor": "hexsky:block_mass",
+      "input": "vec",
+      "output": "num",
+      "text": "hexsky.page.navimancy.basic.block_mass"
     }
   ]
 }

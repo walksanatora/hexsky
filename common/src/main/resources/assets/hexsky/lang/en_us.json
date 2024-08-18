@@ -51,6 +51,8 @@
   "hexsky.page.navimancy.basic.ship_scale": "Takes a ship and returns its current scale.",
   "hexcasting.action.hexsky:shiptoworldpos": "Worldly Purification",
   "hexsky.page.navimancy.basic.shiptoworldpos": "Takes a position originating from a ship and transforms it into its worldly equivalent.",
+  "hexcasting.action.hexsky:block_mass": "Deadweight Purification",
+  "hexsky.page.navimancy.basic.block_mass": "Takes a position of a Block and adds its current mass to the stack.",
 
 
 
