@@ -26,7 +26,7 @@
   "hexsky.page.ship_spells.zone_ships": "Analogous to $(l:patterns/entities#hexcasting:zone_entity)Zone Distillation$(), but instead returns a list of ships. Blocked by $(l:patterns/spells/ship#hexsky:cloak)Cloak$().",
 
   "hexcasting.action.hexsky:ship_weight": "Tonnage Purification",
-  "hexsky.page.ship_spells.ship_weight": "Takes a ship and returns its total mass.$(br)Forces applied by Hexes are multiplied by this number.",
+  "hexsky.page.ship_spells.ship_weight": "Takes a ship and returns its total mass.$(br)Forces applied by Hexes are to be multiplied by this number.",
 
   "hexcasting.action.hexsky:assemble": "Assemble",
   "hexsky.page.ship_spells.assemble": "Takes a list of vectors corresponsing to static blocks in the world, and transforms them into a separated free-floating object. Blocks outside of my ambit are ignored.",
