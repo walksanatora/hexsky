@@ -19,7 +19,6 @@ import org.valkyrienskies.mod.common.util.toBlockPos
 import org.valkyrienskies.mod.common.util.toJOML
 import org.valkyrienskies.mod.common.yRange
 import org.valkyrienskies.mod.util.relocateBlock
-import ram.talia.hexal.api.div
 import kotlin.math.ln
 
 object OpAssemble : VariableMediaAction {
@@ -28,7 +27,7 @@ object OpAssemble : VariableMediaAction {
         val blocks = args.getList(0,argc)
         val filter = blocks.filterIsInstance<Vec3Iota>().filter { env.isVecInAmbit(it.vec3) }.map {it.vec3.blockPos}
         if (filter.isEmpty()) throw MishapInvalidIota.ofType(args[0],0,"novalid_pos")
-        return if (filter.size == 1) {Many(filter)} else {One(filter.first())}
+        return if (filter.size != 1) {Many(filter)} else {One(filter.first())}
     }
 
     private class Many(val blocks: List<BlockPos>) : VariableMediaAction.Result(((ln(blocks.size.toDouble()) * 3) + 1).toLong() * blocks.size * MediaConstants.CRYSTAL_UNIT ) {
@@ -48,12 +47,15 @@ object OpAssemble : VariableMediaAction {
 
     private class One(val block: BlockPos) : VariableMediaAction.Result(MediaConstants.CRYSTAL_UNIT) {
         override fun execute(env: CastingEnvironment): List<Iota> {
-            val ship = env.world.shipObjectWorld.createNewShipAtBlock(block.toJOML(), false, 1.0, env.world.dimensionId)
+            val fix = block.toJOML()
+            if (fix.y() < 0) {fix.add(0,-1,0)}
+            val ship = env.world.shipObjectWorld.createNewShipAtBlock(fix, false, 1.0, env.world.dimensionId)
             val center = ship.chunkClaim.getCenterBlockCoordinates(env.world.yRange).toBlockPos()
-            env.world.relocateBlock(block, center, true, ship, Rotation.NONE)
+            env.world.relocateBlock(fix.toBlockPos(), center, true, ship, Rotation.NONE)
             return listOf(ShipIota(ship.id, ship.slug))
         }
     }
 }
 
 val Vec3.blockPos: BlockPos get() = BlockPos(this.x.toInt(), this.y.toInt(), this.z.toInt())
+fun Vec3.div(rhs: Double) = Vec3(this.x / rhs, this.y / rhs, this.z / rhs)
