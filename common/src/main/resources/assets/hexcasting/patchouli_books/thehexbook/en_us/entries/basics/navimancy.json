@@ -1,0 +1,17 @@
+{
+  "name": "hexsky.entry.navimancy",
+  "icon": "minecraft:oak_boat",
+  "category": "hexcasting:basics",
+  "advancement": "hexcasting:root",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexsky.page.navimancy"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "hexsky.page.navimancy.terms"
+    }
+  ]
+}

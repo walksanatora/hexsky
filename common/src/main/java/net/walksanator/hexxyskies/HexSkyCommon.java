@@ -6,7 +6,10 @@ package net.walksanator.hexxyskies;
 
 
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
+import at.petrak.hexcasting.interop.HexInterop;
+import dev.architectury.platform.Platform;
 import net.walksanator.hexxyskies.casting.AmbitViaRemap;
+import vazkii.patchouli.api.PatchouliAPI;
 
 
 public final class HexSkyCommon {
@@ -20,6 +23,9 @@ public final class HexSkyCommon {
         });
         killMe(); //lets go gambling!
         //can_start_enlighten per_world_pattern requires_enlightenment
+
+        if (Platform.isModLoaded("complexhex") || Platform.isModLoaded("moreiotas") || Platform.isModLoaded("hexal"))
+            PatchouliAPI.get().setConfigFlag(HexInterop.PATCHOULI_ANY_INTEROP_FLAG, true);
     }
     public static void killMe() {
         //IotaRegistry.INSTANCE.register(); //moved to a mixin
