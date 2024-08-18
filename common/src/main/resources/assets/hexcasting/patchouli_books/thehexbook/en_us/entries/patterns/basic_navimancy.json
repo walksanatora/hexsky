@@ -1,0 +1,81 @@
+{
+  "name": "hexsky.entry.navimancy.basic",
+  "icon": "minecraft:spruce_boat",
+  "category": "hexcasting:patterns",
+  "advancement": "hexcasting:root",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:cloak",
+      "anchor": "hexsky:cloak",
+      "input": "ship",
+      "output": "bool",
+      "text": "hexsky.page.navimancy.basic.cloak"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:p2s",
+      "anchor": "hexsky:p2s",
+      "input": "vec",
+      "output": "ship",
+      "text": "hexsky.page.navimancy.basic.p2s"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_pos",
+      "anchor": "hexsky:ship_pos",
+      "input": "ship",
+      "output": "vec",
+      "text": "hexsky.page.navimancy.basic.ship_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_rot",
+      "anchor": "hexsky:ship_rot",
+      "input": "ship",
+      "output": "vec",
+      "text": "hexsky.page.navimancy.basic.ship_rot"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_weight",
+      "anchor": "hexsky:ship_weight",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.navimancy.basic.ship_weight"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scale",
+      "anchor": "hexsky:ship_scale",
+      "input": "ship",
+      "output": "num",
+      "text": "hexsky.page.navimancy.basic.ship_scale"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_raycast",
+      "anchor": "hexsky:ship_raycast",
+      "input": "vec, vec",
+      "output": "ship | null",
+      "text": "hexsky.page.navimancy.basic.ship_raycast"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:zone_ships",
+      "anchor": "hexsky:zone_ships",
+      "input": "vec, double",
+      "output": "[ship]",
+      "text": "hexsky.page.navimancy.basic.zone_ships"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:shiptoworldpos",
+      "anchor": "hexsky:shiptoworldpos",
+      "input": "vec",
+      "output": "vec",
+      "text": "hexsky.page.navimancy.basic.shiptoworldpos"
+    }
+  ]
+}

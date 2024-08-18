@@ -1,15 +1,14 @@
 {
-  "name": "hexsky.entry.ship_complexhex",
-  "category": "hexcasting:patterns/spells",
+  "name": "hexsky.entry.complexhex",
   "icon": "minecraft:mangrove_boat",
-  "flag": "mod:complexhex",
-  "sortnum": 10,
+  "category": "hexcasting:interop",
   "advancement": "hexcasting:root",
-  "read_by_default": true,
+  "sortnum": 10,
+  "flag": "mod:complexhex",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "hexsky.entry.ship_complexhex.entry"
+      "text": "hexsky.page.complexhex.entry"
     },
     {
       "type": "hexcasting:pattern",
@@ -17,7 +16,7 @@
       "anchor": "hexsky:ship_rot_quat",
       "input": "ship",
       "output": "quat",
-      "text": "hexsky.page.ship_complexhex.ship_rot_quat"
+      "text": "hexsky.page.complexhex.ship_rot_quat"
     },
     {
       "type": "hexcasting:pattern",
@@ -25,7 +24,7 @@
       "anchor": "hexsky:ship_rot_quat_set",
       "input": "ship, quat",
       "output": "ship | null",
-      "text": "hexsky.page.ship_complexhex.ship_rot_quat_set"
+      "text": "hexsky.page.complexhex.ship_rot_quat_set"
     }
   ]
 }

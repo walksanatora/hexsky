@@ -1,0 +1,72 @@
+{
+  "name": "hexsky.entry.navimancy.applied",
+  "icon": "minecraft:dark_oak_boat",
+  "category": "hexcasting:patterns/spells",
+  "advancement": "hexcasting:root",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:ship_scaling",
+      "anchor": "hexsky:ship_scaling",
+      "input": "ship, double",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.ship_scaling"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:assemble",
+      "anchor": "hexsky:assemble",
+      "input": "[vec]",
+      "output": "ship",
+      "text": "hexsky.page.navimancy.applied.assemble"
+    },{
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant",
+      "anchor": "hexsky:force_variant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.force_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_variant",
+      "anchor": "hexsky:torque_variant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.torque_variant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_invariant",
+      "anchor": "hexsky:force_invariant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.force_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:torque_invariant",
+      "anchor": "hexsky:torque_invariant",
+      "input": "ship, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.torque_invariant"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_variant_pos",
+      "anchor": "hexsky:force_variant_pos",
+      "input": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.force_variant_pos"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexsky:force_invariant_pos",
+      "anchor": "hexsky:force_invariant_pos",
+      "input": "ship, vec, vec",
+      "output": "",
+      "text": "hexsky.page.navimancy.applied.force_invariant_pos"
+    }
+  ]
+}
