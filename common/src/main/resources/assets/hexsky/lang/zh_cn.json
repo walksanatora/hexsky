@@ -5,24 +5,24 @@
 
   "hexsky.entry.navimancy": "船只航行术",
   "hexsky.page.navimancy": "虽然许多生物性、机械性、媒质融注性构造都能从环境中独立出来，但它们仍受到诸多物理限制，或是无法具有物理实体、无法搭载其他构造。在海军军团的帮助下，我成功地将世界的一部分组装为了刚性的独立物体，且能控制它们。",
-  "hexsky.page.navimancy.terms": "这些物体的移动不需外物协助，因此产生了近乎无限的创造性。$(li)$(thing)船只$()是独立于世界的、能自由移动的物体。$(li)$(thing)力$()是朝向特定方向的$(l:patterns/spells/basic#hexcasting:add_motion)驱动$()。$(li)$(thing)力矩$()与力类似，但只涉及旋转。$(li)$(thing)相对$()力以船只的轴为参照。$(li)$(thing)绝对$()力则以世界的轴为参照。$()",
+  "hexsky.page.navimancy.terms": "这些物体的移动不需外物协助，因此具有近乎无限的可塑性。$(li)$(thing)船只$()是独立于世界的、能自由移动的物体。$(li)$(thing)力$()是朝向特定方向的$(l:patterns/spells/basic#hexcasting:add_motion)驱动$()。$(li)$(thing)力矩$()与力类似，但只涉及旋转。$(li)$(thing)相对$()力以船只的轴为参照。$(li)$(thing)绝对$()力则以世界的轴为参照。$()",
 
   "hexsky.entry.complexhex": "ComplexHex 航行术",
-  "hexsky.entry.complexhex.entry": "在我的研究过程中，我发现简单的旋转表示方式难以堪用。因此，我开发了适配高效旋转表示方式的图案。它们能够将这些表示方式作用于船只。",
+  "hexsky.page.complexhex.entry": "在我的研究过程中，我发现简单的旋转表示方式难以堪用。因此，我开发了适配高效旋转表示方式的图案。它们能够将这些表示方式作用于船只。",
   "hexcasting.action.hexsky:ship_rot_quat": "轴承之纯化",
   "hexsky.page.complexhex.ship_rot_quat": "将船只的朝向返回为$(thing)四元数$()。",
   "hexcasting.action.hexsky:ship_rot_quat_set": "轴承之馏化",
   "hexsky.page.complexhex.ship_rot_quat_set": "将船只的朝向设定为所给$(thing)四元数$()。船只的遮篷需被禁用，且$(thing)四元数$()必须有效。",
 
   "hexsky.entry.hexal": "咒灵航行术",
-  "hexsky.entry.hexal.wisp.entry": "构造更简单的事物常常难以独自理解船只的存在，因此我制造了这些图案，用以在船只处引导咒灵。",
+  "hexsky.page.hexal.wisp.entry": "构造更简单的事物常常难以独自理解船只的存在，因此我制造了这些图案，用以在船只处引导咒灵。",
   "hexcasting.action.hexsky:embark": "登船",
   "hexsky.page.hexal.wisp.embark": "将咒灵连接至船只。咒灵和船只必须足够靠近。此操作必须由咒灵执行，尝试用法杖执行会招致可怖的事故。",
   "hexcasting.action.hexsky:disembark": "下船",
   "hexsky.page.hexal.wisp.disembark": "解开咒灵和船只的连接。此操作必须由咒灵执行，尝试用法杖执行会招致可怖的事故。",
 
   "hexsky.entry.moreiotas": "MoreIotas 航行术",
-  "hexsky.entry.moreiotas.entry": "在信息处理方面上的发展带来的是配套的船只图案。",
+  "hexsky.page.moreiotas.entry": "在信息处理方面上的发展带来的是配套的船只图案。",
   "hexcasting.action.hexsky:ship_slug_get": "造船工之纯化",
   "hexsky.page.moreiotas.ship_slug_get": "返回船只的名称。",
   "hexcasting.action.hexsky:ship_slug_set": "造船工之馏化",
@@ -55,7 +55,7 @@
   "hexsky.page.navimancy.basic.block_mass": "接受一个方块位置，返回其当前质量。",
 
 
-  
+
   "hexsky.entry.navimancy.applied": "应用航行术",
   "hexcasting.action.hexsky:assemble": "组装",
   "hexsky.page.navimancy.applied.assemble": "接受对应世界中静态方块的位置向量列表，将其组装为可自由移动的独立物体。超出我施法范围的方块会被忽略。",
