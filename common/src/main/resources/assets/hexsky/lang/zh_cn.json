@@ -8,7 +8,7 @@
   "hexsky.page.navimancy.terms": "这些物体的移动不需外物协助，因此具有近乎无限的可塑性。$(li)$(thing)船只$()是独立于世界的、能自由移动的物体。$(li)$(thing)力$()是朝向特定方向的$(l:patterns/spells/basic#hexcasting:add_motion)驱动$()。$(li)$(thing)力矩$()与力类似，但只涉及旋转。$(li)$(thing)相对$()力以船只的轴为参照。$(li)$(thing)绝对$()力则以世界的轴为参照。$()",
 
   "hexsky.entry.complexhex": "ComplexHex 航行术",
-  "hexsky.page.complexhex.entry": "在我的研究过程中，我发现简单的旋转表示方式难以堪用。因此，我开发了适配高效旋转表示方式的图案。它们能够将这些表示方式作用于船只。",
+  "hexsky.page.complexhex.entry": "我在的研究过程中发现简单的旋转表示方式难以堪用。因此，我开发了适配高效旋转表示方式的图案。它们能够将这些表示方式作用于船只。",
   "hexcasting.action.hexsky:ship_rot_quat": "轴承之纯化",
   "hexsky.page.complexhex.ship_rot_quat": "将船只的朝向返回为$(thing)四元数$()。",
   "hexcasting.action.hexsky:ship_rot_quat_set": "轴承之馏化",
