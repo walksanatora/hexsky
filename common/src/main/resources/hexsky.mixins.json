@@ -11,7 +11,11 @@
     "MixinEntityRaycast",
     "MixinInjectIotaRegistration",
     "MixinInjectPatternRegistration",
-    "MixinOpGetEntitiesBy"
+    "MixinOpGetEntitiesBy",
+    "env.DuckShipGetCircleEnv",
+    "env.DuckShipGetComputerEnv",
+    "env.DuckShipGetPlayerEnv",
+    "env.DuckShipGetWispEnv"
   ],
   "injectors": {
     "defaultRequire": 1

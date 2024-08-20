@@ -11,9 +11,12 @@ import dev.architectury.platform.Platform;
 import net.walksanator.hexxyskies.casting.AmbitViaRemap;
 import vazkii.patchouli.api.PatchouliAPI;
 
+import java.util.logging.Logger;
+
 
 public final class HexSkyCommon {
     public static final String MOD_ID = "hexsky";
+    public static final Logger LOGGER = Logger.getLogger(MOD_ID);
 
     public static void init() {
         // Write common init code here.
