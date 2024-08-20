@@ -16,7 +16,7 @@ object OpShipRot : ConstMediaAction {
     override fun execute(args: List<Iota>, env: CastingEnvironment): List<Iota> {
         val ship = args.getShip(0,env.world,argc)
         val forward = ship.transform.shipToWorldRotation
-            .transform( (ship as ServerShip).getShipDataHolder().forward ).toMinecraft()
+            .transform(ship.getShipDataHolder().forward ).toMinecraft()
         return listOf(Vec3Iota(forward))
     }
 }
