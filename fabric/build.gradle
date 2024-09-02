@@ -59,11 +59,11 @@ dependencies {
     modRuntimeOnly "at.petra-k.paucal:paucal-fabric-${rootProject.minecraft_version}:${rootProject.paucal_version}"
     modRuntimeOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-api:${rootProject.cca_version}"
     modRuntimeOnly files("${rootProject.rootDir}/libs/serialization-hooks-0.4.99999.jar")
-    modImplementation files("${rootProject.rootDir}/libs/hexal-fabric-1.20.1-0.3.0-2.jar")
+    modRuntimeOnly files("${rootProject.rootDir}/libs/hexal-fabric-1.20.1-0.3.0-2.jar")
     modImplementation files("${rootProject.rootDir}/libs/moreiotas-fabric-1.20.1-0.1.0-3.jar")
     modImplementation files("${rootProject.rootDir}/libs/complexhex-fabric-1.20.1-0.1.0.jar")
 
-    modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+    modRuntimeOnly("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
     implementation("com.eliotlash.mclib:mclib:20")
 
     implementation group: "org.jblas", name: "jblas", version: "1.2.5" //moreiotas crashes without this sometimes

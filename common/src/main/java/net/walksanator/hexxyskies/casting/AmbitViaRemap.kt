@@ -25,7 +25,7 @@ class AmbitViaRemap(private val parent: CastingEnvironment) : IsVecInRange {
             val ship = parent.`hexsky$getShip`()
             if (ship == null) {
                 val ship2 = parent.world.getShipManagingPos(vec)
-                return (parent as CastingEnvironmentAccessor).invokeIsVecInRangeEnvironment(ship2?.toWorldCoordinates(vec))
+                return (parent as CastingEnvironmentAccessor).invokeIsVecInRangeEnvironment(ship2?.toWorldCoordinates(vec)?: vec)
                 // ship to world remapping
             } else {
                 // world to ship remapping

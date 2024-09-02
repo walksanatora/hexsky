@@ -19,6 +19,7 @@ import org.valkyrienskies.mod.common.util.toBlockPos
 import org.valkyrienskies.mod.common.util.toJOML
 import org.valkyrienskies.mod.common.yRange
 import org.valkyrienskies.mod.util.relocateBlock
+import kotlin.math.floor
 import kotlin.math.ln
 
 object OpAssemble : VariableMediaAction {
@@ -35,7 +36,7 @@ object OpAssemble : VariableMediaAction {
             val dense = DenseBlockPosSet()
             val center = blocks.fold(Vec3.ZERO) { acc, it ->
                 val fix = it.toJOML()
-                dense.add(if (fix.y() < 0) {fix.add(0,-1,0)} else {fix})
+                dense.add(fix)
                 acc.add(it.center)
             }.div(blocks.size.toDouble()).blockPos
 
@@ -48,7 +49,6 @@ object OpAssemble : VariableMediaAction {
     private class One(val block: BlockPos) : VariableMediaAction.Result(MediaConstants.CRYSTAL_UNIT) {
         override fun execute(env: CastingEnvironment): List<Iota> {
             val fix = block.toJOML()
-            if (fix.y() < 0) {fix.add(0,-1,0)}
             val ship = env.world.shipObjectWorld.createNewShipAtBlock(fix, false, 1.0, env.world.dimensionId)
             val center = ship.chunkClaim.getCenterBlockCoordinates(env.world.yRange).toBlockPos()
             env.world.relocateBlock(fix.toBlockPos(), center, true, ship, Rotation.NONE)
@@ -57,5 +57,5 @@ object OpAssemble : VariableMediaAction {
     }
 }
 
-val Vec3.blockPos: BlockPos get() = BlockPos(this.x.toInt(), this.y.toInt(), this.z.toInt())
+val Vec3.blockPos: BlockPos get() = BlockPos(floor(this.x).toInt(), floor(this.y).toInt(), floor(this.z).toInt())
 fun Vec3.div(rhs: Double) = Vec3(this.x / rhs, this.y / rhs, this.z / rhs)
