@@ -1,12 +1,9 @@
 package net.walksanator.hexxyskies.casting.patterns
 
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry
-import at.petrak.hexcasting.api.casting.iota.IotaType
 import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
-import at.petrak.hexcasting.common.lib.HexRegistries
 import dev.architectury.platform.Platform
-import dev.architectury.registry.registries.DeferredRegister
 import net.minecraft.resources.ResourceLocation
 import net.walksanator.hexxyskies.HexSkyCommon
 import java.util.function.BiConsumer
@@ -104,6 +101,7 @@ object PatternRegistry {
         OpBlockMass
     )}
 
+    //#region hexal interop
     val EMBARK = if (Platform.isModLoaded("hexal")) {
         REGISTRY.register("embark") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwdewdwewd", HexDir.EAST),
@@ -116,7 +114,9 @@ object PatternRegistry {
             OpDisembark
         )}
     } else {null}
+    //#endregion
 
+    //#region moreiotas interop
     val SHIP_SLUG_GET = if (Platform.isModLoaded("moreiotas")) {
         REGISTRY.register("ship_slug_get") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwaqwa", HexDir.EAST),
@@ -140,7 +140,9 @@ object PatternRegistry {
             HexPattern.fromAngles("wawqqdwdqdw", HexDir.EAST),
             OpShipToWorldMatrix
         )}} else {null}
+    //#endregion
 
+    //#region complexhex interop
     val SHIP_ROT_QUAT = if (Platform.isModLoaded("complexhex")) {
         REGISTRY.register("ship_rot_quat") { ActionRegistryEntry(
             HexPattern.fromAngles("wawwwaawe", HexDir.EAST),
@@ -153,6 +155,7 @@ object PatternRegistry {
             OpShipSetRotQuat
         )}
     } else {null}
+    //#endregion
 
     fun register(consumer: BiConsumer<ActionRegistryEntry, ResourceLocation>) {
         HexSkyCommon.LOGGER.warning("injecting patterns into hexcasting's loading")
@@ -163,6 +166,6 @@ object PatternRegistry {
     }
 }
 
-private fun MutableMap<ResourceLocation,ActionRegistryEntry>.register(id: String, ARE: Supplier<ActionRegistryEntry>) {
-    this[ResourceLocation(HexSkyCommon.MOD_ID,id)] = ARE.get()
+fun <T> MutableMap<ResourceLocation,T>.register(id: String, value: Supplier<T>) {
+    this[ResourceLocation(HexSkyCommon.MOD_ID,id)] = value.get()
 }
