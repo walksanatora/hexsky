@@ -1,15 +1,19 @@
 package net.walksanator.hexxyskies.casting.patterns
 
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry
+import at.petrak.hexcasting.api.casting.iota.IotaType
 import at.petrak.hexcasting.api.casting.math.HexDir
 import at.petrak.hexcasting.api.casting.math.HexPattern
 import at.petrak.hexcasting.common.lib.HexRegistries
 import dev.architectury.platform.Platform
 import dev.architectury.registry.registries.DeferredRegister
+import net.minecraft.resources.ResourceLocation
 import net.walksanator.hexxyskies.HexSkyCommon
+import java.util.function.BiConsumer
+import java.util.function.Supplier
 
 object PatternRegistry {
-    private val REGISTRY = DeferredRegister.create(HexSkyCommon.MOD_ID, HexRegistries.ACTION)
+    private val REGISTRY = mutableMapOf<ResourceLocation,ActionRegistryEntry>()
 
     val POS_TO_SHIP = REGISTRY.register("p2s"){ ActionRegistryEntry(
         HexPattern.fromAngles("wawwwa",HexDir.EAST),
@@ -150,7 +154,15 @@ object PatternRegistry {
         )}
     } else {null}
 
-    fun register() {
-        REGISTRY.register()
+    fun register(consumer: BiConsumer<ActionRegistryEntry, ResourceLocation>) {
+        HexSkyCommon.LOGGER.warning("injecting patterns into hexcasting's loading")
+        REGISTRY.forEach {
+            HexSkyCommon.LOGGER.warning(it.key.toString())
+            consumer.accept(it.value, it.key)
+        }
     }
+}
+
+private fun MutableMap<ResourceLocation,ActionRegistryEntry>.register(id: String, ARE: Supplier<ActionRegistryEntry>) {
+    this[ResourceLocation(HexSkyCommon.MOD_ID,id)] = ARE.get()
 }
