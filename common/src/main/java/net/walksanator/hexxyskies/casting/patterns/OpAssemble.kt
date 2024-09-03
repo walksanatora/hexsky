@@ -31,7 +31,7 @@ object OpAssemble : VariableMediaAction {
         return if (filter.size != 1) {Many(filter)} else {One(filter.first())}
     }
 
-    private class Many(val blocks: List<BlockPos>) : VariableMediaAction.Result(((ln(blocks.size.toDouble()) * 3) + 1).toLong() * blocks.size * MediaConstants.CRYSTAL_UNIT ) {
+    private class Many(val blocks: List<BlockPos>) : VariableMediaAction.Result(((ln(blocks.size.toDouble()) * 3) + 1).toLong() * MediaConstants.CRYSTAL_UNIT ) {
         override fun execute(env: CastingEnvironment): List<Iota> {
             val dense = DenseBlockPosSet()
             val center = blocks.fold(Vec3.ZERO) { acc, it ->
