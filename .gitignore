@@ -160,6 +160,7 @@ celerybeat.pid
 .env
 .venv
 env/
+!/common/src/main/java/net/walksanator/hexxyskies/mixin/env
 venv/
 ENV/
 env.bak/
