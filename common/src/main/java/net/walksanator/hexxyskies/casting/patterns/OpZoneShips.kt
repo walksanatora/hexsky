@@ -6,6 +6,7 @@ import at.petrak.hexcasting.api.casting.getDoubleBetween
 import at.petrak.hexcasting.api.casting.getPositiveDouble
 import at.petrak.hexcasting.api.casting.getVec3
 import at.petrak.hexcasting.api.casting.iota.Iota
+import at.petrak.hexcasting.api.casting.iota.ListIota
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.world.phys.AABB
 import net.walksanator.hexxyskies.casting.iotas.ShipIota
@@ -24,7 +25,7 @@ object OpZoneShips: ConstMediaAction {
         val ships = env.world.getShipsIntersecting(AABB(center, center).inflate(radius)).filter { ship ->
             ship is ServerShip && !ship.loaded(env.world).getShipDataHolder().cloaked
         }.map { ship -> ShipIota(ship.id, ship.slug) }
-        return ships
+        return listOf(ListIota(ships))
     }
 }
 

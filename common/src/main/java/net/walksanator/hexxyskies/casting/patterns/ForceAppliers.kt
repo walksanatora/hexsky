@@ -29,7 +29,7 @@ class OpForceApply(private val invariant: Boolean) : SpellAction {
         val force = args.getVec3(1,argc)
         return SpellAction.Result(
             Spell(invariant, ship.getShipDataHolder(), force.toJOML()),
-            (force.length() / ship.mass).pow(2).toLong() * MediaConstants.DUST_UNIT,
+            (force.length() / ship.mass).toLong() * MediaConstants.DUST_UNIT,
             listOf(
                 ParticleSpray(ship.getInertialData()!!.centerOfMassInShip.toMinecraft(), Vec3.ZERO, 0.3, 0.2, 30)
             )
@@ -53,9 +53,8 @@ class OpTorqueApply(private val invariant: Boolean) : SpellAction {
         val ship = args.getShip(0,env.world,argc)
         val force = args.getVec3(1,argc)
         return SpellAction.Result(
-
             Spell(invariant, ship.getShipDataHolder(), force.toJOML()),
-            (force.length() / ship.mass).pow(2).toLong() * MediaConstants.DUST_UNIT,
+            (force.length() / ship.mass).toLong() * MediaConstants.DUST_UNIT,
             listOf(
                 ParticleSpray(ship.getInertialData()!!.centerOfMassInShip.toMinecraft(), Vec3.ZERO, 0.3, 0.2, 30)
             )

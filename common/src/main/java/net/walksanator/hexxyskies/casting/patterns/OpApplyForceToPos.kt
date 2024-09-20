@@ -1,12 +1,15 @@
 package net.walksanator.hexxyskies.casting.patterns
 
+import at.petrak.hexcasting.api.casting.ParticleSpray
 import at.petrak.hexcasting.api.casting.RenderedSpell
 import at.petrak.hexcasting.api.casting.castables.SpellAction
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment
 import at.petrak.hexcasting.api.casting.getVec3
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.mishaps.MishapBadLocation
+import at.petrak.hexcasting.api.misc.MediaConstants
 import net.minecraft.world.phys.AABB
+import net.minecraft.world.phys.Vec3
 import net.walksanator.hexxyskies.getInertialData
 import net.walksanator.hexxyskies.getShip
 import net.walksanator.hexxyskies.ship.ShipDataHolder
@@ -30,7 +33,12 @@ class OpApplyForceToPos(private val mode: Boolean) : SpellAction {
             throw MishapBadLocation(offset, "out_of_ship")
         }
 
-        return SpellAction.Result(Spell(mode, ship.getShipDataHolder(), force.toJOML(), offset.toJOML()), 0, listOf())
+        return SpellAction.Result(
+            Spell(mode, ship.getShipDataHolder(), force.toJOML(), offset.toJOML()),
+            (force.length() / ship.mass).toLong() * MediaConstants.DUST_UNIT,
+            listOf(
+                ParticleSpray(ship.getInertialData()!!.centerOfMassInShip.toMinecraft(), Vec3.ZERO, 0.3, 0.2, 30)
+            ))
     }
 
     private class Spell(val mode: Boolean, val dh: ShipDataHolder, val force: Vector3dc, val offset: Vector3dc) : RenderedSpell {
