@@ -62,7 +62,7 @@ dependencies {
     modRuntimeOnly files("${rootProject.rootDir}/libs/hexal-fabric-1.20.1-0.3.0-2.jar")
     modImplementation files("${rootProject.rootDir}/libs/moreiotas-fabric-1.20.1-0.1.0-3.jar")
     modImplementation files("${rootProject.rootDir}/libs/complexhex-fabric-1.20.1-0.1.0.jar")
-    //modRuntimeOnly files("${rootProject.rootDir}/libs/hextweaks-4.0.0-fabric.jar")
+    modRuntimeOnly "maven.modrinth:hextweaks:a9yxv4g3"
     //modRuntimeOnly "maven.modrinth:ducky-periphs:FYDI2Gut"
 
     modRuntimeOnly("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")

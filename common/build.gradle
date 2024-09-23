@@ -33,6 +33,6 @@ dependencies {
     modCompileOnly files("${rootProject.rootDir}/libs/moreiotas-common-1.20.1-0.1.0-3.jar")
     modCompileOnly files("${rootProject.rootDir}/libs/complexhex-fabric-1.20.1-0.1.0.jar")
 
-    modCompileOnly files("${rootProject.rootDir}/libs/hextweaks-4.0.0.jar")
+    modCompileOnly "maven.modrinth:hextweaks:a9yxv4g3" //5.0.2
     modCompileOnly "cc.tweaked:cc-tweaked-${rootProject.minecraft_version}-fabric:${rootProject.cct_version}"
 }

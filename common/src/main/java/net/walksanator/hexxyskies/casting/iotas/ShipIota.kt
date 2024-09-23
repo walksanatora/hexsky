@@ -12,7 +12,7 @@ import org.valkyrienskies.core.api.ships.ServerShip
 import org.valkyrienskies.core.api.ships.properties.ShipId
 import org.valkyrienskies.mod.common.shipObjectWorld
 
-class ShipIota(val ship: ShipId, private var name: String?) : Iota(Type,ship) {
+class ShipIota(val ship: ShipId, var name: String?) : Iota(Type,ship) {
 
     fun getShip(world: ServerLevel?): ServerShip? {
         val sow = world.shipObjectWorld

@@ -160,12 +160,12 @@ object PatternRegistry {
     fun register(consumer: BiConsumer<ActionRegistryEntry, ResourceLocation>) {
         HexSkyCommon.LOGGER.warning("injecting patterns into hexcasting's loading")
         REGISTRY.forEach {
-            HexSkyCommon.LOGGER.warning(it.key.toString())
             consumer.accept(it.value, it.key)
         }
     }
 }
 
-fun <T> MutableMap<ResourceLocation,T>.register(id: String, value: Supplier<T>) {
+fun <T> MutableMap<ResourceLocation,T>.register(id: String, value: Supplier<T>) : T {
     this[ResourceLocation(HexSkyCommon.MOD_ID,id)] = value.get()
+    return value.get()
 }
